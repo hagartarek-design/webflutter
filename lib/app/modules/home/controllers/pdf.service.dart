@@ -5,7 +5,7 @@ import 'package:percent_indicator/flutter_percent_indicator.dart';
 
 import '../views/mainpagecopy.dart';
 import 'home_controller.dart';
-import 'dart:html' as html;
+// import 'dart:html' as html;
 class LessonPdfViewer extends StatefulWidget {
   final int lessonId;
   final int totalPages; 
@@ -50,11 +50,11 @@ initialPage: 1
 
 );
 
-void _downloadImage(String url) {
-    final anchor = html.AnchorElement(href: url)
-      ..setAttribute("download", "saved_image.png")
-      ..click();
-  }
+// void _downloadImage(String url) {
+//     final anchor = html.AnchorElement(href: url)
+//       ..setAttribute("download", "saved_image.png")
+//       ..click();
+//   }
 
 
     bool selectedsection=false;
@@ -134,7 +134,7 @@ List l=[];
               PopupMenuItem(
                 child: const Text("Save as..."),
                 onTap: () {
-                  _downloadImage(imageUrl);
+                  // _downloadImage(imageUrl);
                 },
               ),
             ],

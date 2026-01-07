@@ -4,10 +4,8 @@ import 'dart:io';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
-import 'package:my_app/Applinks.dart';
 import 'package:my_app/app/models/attachment%20copy.dart';
 import 'package:my_app/app/models/attachment.dart';
 import 'package:my_app/app/models/cart.dart';
@@ -601,6 +599,7 @@ else{print(response.statusCode);}
       throw Exception('Network error: $e');
     }
   }
+  
   TextEditingController codebywallet=TextEditingController();
   Future<Map<String, dynamic>> purchaseSection({
     required String sectionId,

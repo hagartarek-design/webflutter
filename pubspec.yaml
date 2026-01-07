@@ -175,8 +175,8 @@ dependencies:
   intl_phone_field: ^3.2.0
   country_picker: ^2.0.27
   country_pickers: ^3.0.1
-  web: ^1.1.1
-  google_identity_services_web: ^0.2.0
+  # web: ^1.1.1
+  # google_identity_services_web: ^0.2.0
   # firebase_core: 2.24.1  # بدون ^
   # firebase_auth: 4.15.1  # بدون ^
   flutter_facebook_auth: ^7.1.2
@@ -202,7 +202,8 @@ dependencies:
   flutter_translate: ^4.1.0
   firebase_core: ^4.2.0
   firebase_auth: ^6.1.1
-  google_sign_in: ^6.2.2
+  # google_sign_in: ^6.2.2
+  # google_sign_in: ^6.2.2
 dev_dependencies:
   flutter_test:
     sdk: flutter

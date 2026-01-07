@@ -2,12 +2,8 @@ import 'dart:convert';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:google_sign_in/google_sign_in.dart';
-import 'package:intl_phone_field/countries.dart';import 'package:google_sign_in/google_sign_in.dart';
-import 'package:google_sign_in_web/google_sign_in_web.dart';
-
+import 'package:intl_phone_field/countries.dart';
 import 'package:my_app/Applinks.dart';
 import 'package:http/http.dart'as http;
 import 'package:my_app/app/modules/home/views/homeafterlogin.dart';
@@ -17,7 +13,6 @@ import 'package:my_app/app/modules/home/views/signup%20copy.dart';
 import 'package:my_app/app/modules/home/views/signup.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../controllers/home_controller.dart';
-// import 'package:google_sign_in/google_sign_in.dart';
 
 class Mainpage extends StatelessWidget {
    Mainpage({super.key});

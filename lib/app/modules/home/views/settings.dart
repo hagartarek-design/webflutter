@@ -12,7 +12,7 @@ import 'package:my_app/app/modules/home/views/subject.dart';
 import 'package:my_app/app/modules/home/views/subjectbooks.dart';
 import 'package:my_app/app/modules/home/views/subjecttype.dart';
 import 'package:translator/translator.dart';
-import 'dart:js' as js;
+// import 'dart:js' as js;
 import '../../../models/wallet.dart';
 import 'exam_solve.dart';
 import 'toggle.dart';
