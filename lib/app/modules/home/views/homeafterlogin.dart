@@ -182,7 +182,7 @@ initialPage: 1
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-              InkWell(child: _buildClassCard('احجز ملازمك', 'assets/1st sec.@2x.png',context) ,onTap: (){
+              InkWell(child: _buildClassCard('احجز ملازمك', 'assets/1stsec.2x.png',context) ,onTap: (){
 
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>subjectBooks2()));
               },) ,
@@ -201,7 +201,7 @@ return Subjectbooks();
               alignment: WrapAlignment.end,
               children: [
           InkWell(child: 
-            _buildClassCard('احجز امنحنات الشامل', 'assets/1st sec.@2x.png',context),
+            _buildClassCard('احجز امنحنات الشامل', 'assets/1stsec.2x.png',context),
           onTap: (){
             Navigator.push(context, MaterialPageRoute(builder: (context){
               return SchudleForTheExam();
@@ -706,5 +706,3 @@ Widget _navItem(String title,
     
   );
 }
-
-
