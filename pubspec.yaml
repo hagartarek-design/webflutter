@@ -58,7 +58,6 @@
 #     - assets/teachers cover.png
 #     - assets/Frame (10).png
 #     - assets/1st sec.@2x.png
-#     - assets/2nd sec. .png
 #     - assets/thumb 4.png
 #     - assets/3rd sec. 2.png
 #     - icons/Group.png
@@ -222,10 +221,10 @@ flutter:
     - assets/forgot password 1.png
     - assets/teachers cover.png
     - assets/Frame (10).png
-    - assets/1st sec.@2x.png
-    - assets/2nd sec. .png
+    - assets/1stsec.2x.png
+    - assets/2ndsec.png
     - assets/thumb 4.png
-    - assets/3rd sec. 2.png
+    - assets/3rdsec.2.png
     - icons/Group.png
     - icons/Frame (11).png
     - icons/Frame (12).png
@@ -277,7 +276,7 @@ flutter:
     - assets/malazm.jpg
     - assets/Component 233.png
     - assets/Component 232.png
-    - assets/Component 232 (1).png
+    - assets/Component232(1).png
     - assets/Component 234.png
     - assets/Group (1).png
     - assets/Group.png
