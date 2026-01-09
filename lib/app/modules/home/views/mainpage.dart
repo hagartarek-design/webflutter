@@ -142,7 +142,7 @@ class HomeView extends GetView<HomeController> {
               ),
             ),
             Image.asset(
-              'assets/teachers cover.png',
+              'assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
