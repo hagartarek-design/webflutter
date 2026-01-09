@@ -49,7 +49,7 @@ Container(
       
       width: 640,height: 832,
       child:
-   Image.asset('assets/forgot password 1.png',width: 497,height: 388,) ,)   ,                 // color: const Color.fromARGB(48, 244, 67, 54),
+   Image.asset('assets/forgotpassword1.png',width: 497,height: 388,) ,)   ,                 // color: const Color.fromARGB(48, 244, 67, 54),
                
                    Container(
                     width: 617,
@@ -68,7 +68,7 @@ Container(
                           width: 457,height: 106,
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          children: [ Image.asset('assets/logo 1.png',width: 106,height: 106,)],) 
+                          children: [ Image.asset('assets/logo1.png',width: 106,height: 106,)],) 
                           ,)
                      ,
                      SizedBox(

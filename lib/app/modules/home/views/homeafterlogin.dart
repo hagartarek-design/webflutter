@@ -117,8 +117,8 @@ initialPage: 1
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
              
                   ],
                 ),
@@ -133,7 +133,7 @@ initialPage: 1
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -164,7 +164,7 @@ initialPage: 1
               ),
             ),
             Image.asset(
-              'assets/teachers cover.png',
+              'assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -238,7 +238,7 @@ ExamresultAnswerSheet()
             // const SizedBox(height: 20),
 
         Image.asset(
-              'assets/thumb 4.png',
+              'assets/thumb4.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),

@@ -198,7 +198,7 @@ color: const Color.fromARGB(255, 245, 245, 245),
                  !isMobile?  Container(
                     width: 704,
                     height: 832,
- child :Stack(children: [  Positioned(top: 276,left: 32, child:  Image.asset('assets/sign up 22 1.png')                    // color: const Color.fromARGB(48, 244, 67, 54),
+ child :Stack(children: [  Positioned(top: 276,left: 32, child:  Image.asset('assets/signup221.png')                    // color: const Color.fromARGB(48, 244, 67, 54),
                  ,width: 641, )]),
                 // ),
               ):Container(),
@@ -626,7 +626,7 @@ TextButton(
  , child:  Row(
   spacing: 16,
   children: [ 
-  Image.asset('assets/facebook circle.png',width: 24,height: 24.56,),
+  Image.asset('assets/facebookcircle.png',width: 24,height: 24.56,),
  AutoTranslateText (text:'تسجبل دخول عبر',
     weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152),),
@@ -661,7 +661,7 @@ TextButton(
  , child:Row(
   spacing: 16,
   children: [ 
-  Image.asset('assets/Google@2x (1).png',width: 24,height: 24.56,),
+  Image.asset('assets/Google@2x(1).png',width: 24,height: 24.56,),
   AutoTranslateText(text:'تسجبل دخول عبر',
     weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152), )
@@ -714,7 +714,7 @@ TextButton(
                         Container(
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          children: [ Image.asset('assets/logo 1.png',width: 106,height: 106,)],) 
+                          children: [ Image.asset('assets/logo1.png',width: 106,height: 106,)],) 
                           ,width: 457,height: 106,)
                      ,
                      Container(
@@ -980,7 +980,7 @@ mainAxisAlignment: MainAxisAlignment.start,    children: [
  , child:  Row(
   spacing: 16,mainAxisAlignment: MainAxisAlignment.center,
   children: [ 
-  Image.asset('assets/facebook circle.png',width: 24,height: 24.56,),
+  Image.asset('assets/facebookcircle.png',width: 24,height: 24.56,),
     AutoTranslateText(text:'تسجبل دخول عبر',weight: FontWeight.w500,//fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152))
   // Text(,style: TextStyle(
@@ -1017,7 +1017,7 @@ TextButton(
  , child:Row(mainAxisAlignment: MainAxisAlignment.center,
   spacing: 16,
   children: [ 
-  Image.asset('assets/Google@2x (1).png',width: 24,height: 24.56,),
+  Image.asset('assets/Google@2x(1).png',width: 24,height: 24.56,),
   AutoTranslateText(text:'تسجبل دخول عبر',weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152))]))),
           
