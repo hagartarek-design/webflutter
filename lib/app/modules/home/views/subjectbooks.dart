@@ -71,7 +71,7 @@ int _currentPage=0;
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -143,8 +143,8 @@ int _currentPage=0;
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                     ), Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                     ), Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -161,7 +161,7 @@ int _currentPage=0;
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -437,7 +437,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame (10).png', width: 43, height: 40),
+          Image.asset('assets/Frame(10).png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',
@@ -510,18 +510,18 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame (14).png'),
+                          _icon('icons/Frame(14).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (13).png'),
+                          _icon('icons/Frame(13).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (12).png'),
+                          _icon('icons/Frame(12).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (11).png'),
+                          _icon('icons/Frame(11).png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -536,9 +536,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame (16).png', 'Google play'),
+                          _storeButton('icons/Frame(16).png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame (15).png', 'App Store'),
+                          _storeButton('icons/Frame(15).png', 'App Store'),
                         ],
                       )
                     ],
@@ -571,7 +571,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group 87935.png',
+                          'assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),

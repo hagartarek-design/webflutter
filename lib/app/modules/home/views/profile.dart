@@ -49,7 +49,7 @@ class Profile extends StatelessWidget {
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -121,8 +121,8 @@ class Profile extends StatelessWidget {
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                     ), Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                     ), Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -139,7 +139,7 @@ class Profile extends StatelessWidget {
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -384,7 +384,7 @@ class Profile extends StatelessWidget {
               SizedBox(height: isMobile ? 12 : 16),
               Container(alignment: Alignment.centerRight,
                 width: isMobile ? double.infinity : 629,
-                child: Image.asset('assets/OIP 1.png', 
+                child: Image.asset('assets/OIP1.png', 
                     width: isMobile ? 70 : 93.91, 
                     height: isMobile ? 67 : 90),
               ),
@@ -822,18 +822,18 @@ class Profile extends StatelessWidget {
                           const SizedBox(height: 12),
                           _buildInfoRowFooter('icons/Phone.png', '+20 106 662 0129'),
                           const SizedBox(height: 12),
-                          _buildInfoRowFooter('icons/sms (1).png', 'support@ashtar.app'),
+                          _buildInfoRowFooter('icons/sms(1).png', 'support@ashtar.app'),
                           const SizedBox(height: 12),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              _icon('icons/Frame (14).png'),
+                              _icon('icons/Frame(14).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (13).png'),
+                              _icon('icons/Frame(13).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (12).png'),
+                              _icon('icons/Frame(12).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (11).png'),
+                              _icon('icons/Frame(11).png'),
                             ],
                           ),
                           const SizedBox(height: 16),
@@ -849,9 +849,9 @@ class Profile extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              _storeButton('icons/Frame (16).png', 'Google play'),
+                              _storeButton('icons/Frame(16).png', 'Google play'),
                               const SizedBox(width: 12),
-                              _storeButton('icons/Frame (15).png', 'App Store'),
+                              _storeButton('icons/Frame(15).png', 'App Store'),
                             ],
                           )
                         ],
@@ -885,7 +885,7 @@ class Profile extends StatelessWidget {
                           Align(
                             alignment: Alignment.centerRight,
                             child: Image.asset(
-                              'assets/Group 87935.png',
+                              'assets/Group87935.png',
                               width: 80,
                               height: 65.7,
                             ),

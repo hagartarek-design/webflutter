@@ -1087,7 +1087,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                   ),
                   Row(
                     children: [
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
                 ],
@@ -1111,9 +1111,9 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                               radius: 24,
                             ),
                           ),
-                          Image.asset('icons/Vector (3).png',
+                          Image.asset('icons/Vector(3).png',
                               width: 40, height: 41),
-                          Image.asset('icons/Vector (2).png',
+                          Image.asset('icons/Vector(2).png',
                               width: 39.02, height: 40)
                         ],
                       ),
@@ -1128,7 +1128,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                             _navText('ذاكر'),
                             _navText('الرئيسية', highlight: true),
                             const SizedBox(width: 12),
-                            Image.asset('assets/Group 87935.png', width: 55),
+                            Image.asset('assets/Group87935.png', width: 55),
                           ],
                         ),
                     ],
@@ -1340,7 +1340,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                                                                 FontWeight
                                                                     .w500)),
                                                     Image.asset(
-                                                        'assets/Group (1).png',
+                                                        'assets/Group(1).png',
                                                         width: 30,
                                                         height: 30)
                                                   ],
@@ -1743,42 +1743,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
     );
   }
 
-  Widget _buildClassCard(String title, String imagePath, context) {
-    final screenWidth = MediaQuery.of(context).size.width;
-    return Column(
-      children: [
-        Container(
-          width: 363,
-          decoration: BoxDecoration(
-            color: const Color.fromARGB(255, 212, 221, 232),
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                height: 180,
-                width: screenWidth,
-                padding: const EdgeInsets.all(8),
-                child: Image.asset(imagePath, fit: BoxFit.contain),
-              ),
-            ],
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Text(
-            title,
-            style: const TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 20,
-              color: Color.fromARGB(255, 6, 69, 152),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
+
 
   Widget _navText(String text, {bool highlight = false}) {
     return Padding(
@@ -1796,179 +1761,9 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
     );
   }
 
-  Widget _buildTeacherInfo(bool isMobile, screenWidth) {
-    return Container(
-      width: !isMobile ? 1120 : screenWidth,
-      padding: const EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Image.asset('assets/Frame (10).png', width: 43, height: 40),
-          const SizedBox(height: 8),
-          const Text(
-            'الأستاذ شريف البدري',
-            style: TextStyle(
-              fontSize: 32,
-              fontWeight: FontWeight.w600,
-              color: Color.fromARGB(255, 6, 69, 152),
-            ),
-            textAlign: TextAlign.right,
-          ),
-          const Text(
-            'مدرس ماده العلوم',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w400,
-              color: Color.fromARGB(255, 6, 69, 152),
-            ),
-            textAlign: TextAlign.right,
-          ),
-          const SizedBox(height: 16),
-          const Text(
-            'أستاذ العلوم المميز: حاز على شهادة التخرج من كلية الآداب والتربية بتقدير امتياز مع مرتبة الشرف، ويتمتع بخبرة واسعة تمتد لثلاثين عامًا في ميدان تدريس اللغة العربية. يتميز بتدريس مناهج الثانوية العامة بكل دقة واهتمام، وقد أُطلِق عليه لقب "صانع الأوائل" نظرًا لتفانيه الدائم وجهوده الحثيثة في تحفيز وتوجيه طلابه نحو تحقيق النجاح والتفوق. ',
-            style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-              color: Color.fromARGB(255, 80, 124, 181),
-            ),
-            textAlign: TextAlign.right,
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildFooter(BuildContext context) {
-    double screenWidth = MediaQuery.of(context).size.width;
-
-    return Container(
-      width: double.infinity,
-      color: const Color.fromARGB(255, 6, 69, 152),
-      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
-      child: Center(
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 1280),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Wrap(
-                alignment: WrapAlignment.spaceBetween,
-                runSpacing: 24,
-                spacing: 24,
-                children: [
-                  SizedBox(
-                    width: screenWidth < 600 ? double.infinity : 500,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          'تواصل معنا',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 242, 195, 42),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 20,
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        _buildInfoRow('icons/location.png',
-                            '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
-                        const SizedBox(height: 12),
-                        _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
-                        const SizedBox(height: 12),
-                        _buildInfoRow(
-                            'icons/sms (1).png', 'support@ashtar.app'),
-                        const SizedBox(height: 12),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            _icon('icons/Frame (14).png'),
-                            const SizedBox(width: 12),
-                            _icon('icons/Frame (13).png'),
-                            const SizedBox(width: 12),
-                            _icon('icons/Frame (12).png'),
-                            const SizedBox(width: 12),
-                            _icon('icons/Frame (11).png'),
-                          ],
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          'حمل التطبيق الان',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 242, 195, 42),
-                            fontWeight: FontWeight.w500,
-                            fontSize: 20,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            _storeButton('icons/Frame (16).png', 'Google play'),
-                            const SizedBox(width: 12),
-                            _storeButton('icons/Frame (15).png', 'App Store'),
-                          ],
-                        )
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    width: screenWidth < 600 ? double.infinity : 600,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Wrap(
-                          alignment: WrapAlignment.end,
-                          spacing: 24,
-                          children: [
-                            _navItem('عن أشطر'),
-                            _navItem('مصادري'),
-                            _navItem('كورساتى'),
-                            _navItem('مدرسينا'),
-                            _navItem('ذاكر'),
-                            _navItem('الرئيسية',
-                                color: Color.fromARGB(255, 242, 195, 42),
-                                fontSize: 24),
-                          ],
-                        ),
-                        const SizedBox(height: 24),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Image.asset(
-                            'assets/Group 87935.png',
-                            width: 80,
-                            height: 65.7,
-                          ),
-                        ),
-                        const SizedBox(height: 16),
-                        Text(
-                          'عن أشطر',
-                          style: TextStyle(
-                            color: Color.fromARGB(255, 242, 195, 42),
-                            fontSize: 20,
-                            fontWeight: FontWeight.w500,
-                          ),
-                          textAlign: TextAlign.right,
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'أشطر معتمدة من كوجنيا واحدة من أكبر المؤسسات التعليمية الدولية فى العالم! أشطر منصة تعليم رقمي قائمة على المناهج الدراسية لطلاب المدارس وبتوفر تجربة تعليمية مخصصة لكل طالب وبتوفرلهم طريقة التعليم المناسبة ليهم',
-                          textAlign: TextAlign.right,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+  
+   
+  
 
   Widget _buildPagination(HomeController controller, int currentPage) {
     int currentIndex = 1;
@@ -2007,29 +1802,8 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
     );
   }
 
-  Widget _buildInfoRow(String iconPath, String text) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
-      children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Text(
-              text,
-              style: TextStyle(color: Colors.white, fontSize: 16),
-              textAlign: TextAlign.right,
-            ),
-          ],
-        ),
-        const SizedBox(width: 8),
-        Image.asset(iconPath, width: 24, height: 24),
-      ],
-    );
-  }
+  
 
-  Widget _icon(String path) {
-    return Image.asset(path, width: 24, height: 24);
-  }
 
   Widget menuButton(
       BuildContext context, String label, Color bgColor, Color textColor) {
@@ -2080,40 +1854,4 @@ class _MenuItem extends StatelessWidget {
   }
 }
 
-Widget _storeButton(String iconPath, String label) {
-  return Container(
-    width: 160,
-    height: 60,
-    padding: const EdgeInsets.all(8),
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(8),
-    ),
-    child: Row(
-      children: [
-        Image.asset(iconPath, width: 40, height: 40),
-        const SizedBox(width: 8),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("Get it on", style: TextStyle(fontWeight: FontWeight.w600)),
-            Text(label, style: TextStyle(fontWeight: FontWeight.w600)),
-          ],
-        ),
-      ],
-    ),
-  );
-}
 
-Widget _navItem(String title,
-    {Color color = const Color.fromARGB(255, 181, 181, 181),
-    double fontSize = 20}) {
-  return Text(
-    title,
-    style: TextStyle(
-      color: color,
-      fontSize: fontSize,
-      fontWeight: FontWeight.w500,
-    ),
-  );
-}

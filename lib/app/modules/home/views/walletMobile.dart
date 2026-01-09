@@ -56,7 +56,7 @@ int currentIndex = 1;
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -128,8 +128,8 @@ int currentIndex = 1;
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                     ), Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                     ), Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -146,7 +146,7 @@ int currentIndex = 1;
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -354,13 +354,13 @@ showDialog(
               Wrap(
                 children: [
                   _buildPaymentMethodCard(
-                    image: 'assets/Group 23576.png',
+                    image: 'assets/Group23576.png',
                     text: 'فوري باي',
                     value: '2فوري باي',
                   ),
                   SizedBox(width: 8),
                   _buildPaymentMethodCard(
-                    image: 'assets/Frame (17).png',
+                    image: 'assets/Frame(17).png',
                     text: 'كارت شحن أشطر',
                     value: '2كارت شحن أشطر',
                   ),
@@ -371,14 +371,14 @@ showDialog(
               Wrap(
                 children: [
                   _buildPaymentMethodCard(
-                    image: 'assets/Group 87970.png',
+                    image: 'assets/Group87970.png',
                     text: 'بطاقة (دفع-ائتمان)',
                     value: '2بطاقة دفع اءتمان',
                     imageWidth: 79,
                   ),
                   SizedBox(width: 8),
                   _buildPaymentMethodCard(
-                    image: 'assets/Frame 203.png',
+                    image: 'assets/Frame203.png',
                     text: 'بطاقة (دفع-ائتمان)',
                     value: '2دفع-ائتمان',
                     imageWidth: 76.89,
@@ -712,7 +712,7 @@ Container(child:Column(children: [       Container(
               SizedBox(height: isMobile ? 12 : 16),
               Container(alignment: Alignment.centerRight,
                 width: 328,
-                child: Image.asset('assets/OIP 1.png', 
+                child: Image.asset('assets/OIP1.png', 
                     width: isMobile ? 70 : 93.91, 
                     height: isMobile ? 67 : 90),
               ),
@@ -1200,18 +1200,18 @@ Widget _buildPaymentMethodCard({
                           const SizedBox(height: 12),
                           _buildInfoRowFooter('icons/Phone.png', '+20 106 662 0129'),
                           const SizedBox(height: 12),
-                          _buildInfoRowFooter('icons/sms (1).png', 'support@ashtar.app'),
+                          _buildInfoRowFooter('icons/sms(1).png', 'support@ashtar.app'),
                           const SizedBox(height: 12),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              _icon('icons/Frame (14).png'),
+                              _icon('icons/Frame(14).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (13).png'),
+                              _icon('icons/Frame(13).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (12).png'),
+                              _icon('icons/Frame(12).png'),
                               const SizedBox(width: 12),
-                              _icon('icons/Frame (11).png'),
+                              _icon('icons/Frame(11).png'),
                             ],
                           ),
                           const SizedBox(height: 16),
@@ -1227,9 +1227,9 @@ Widget _buildPaymentMethodCard({
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              _storeButton('icons/Frame (16).png', 'Google play'),
+                              _storeButton('icons/Frame(16).png', 'Google play'),
                               const SizedBox(width: 12),
-                              _storeButton('icons/Frame (15).png', 'App Store'),
+                              _storeButton('icons/Frame(15).png', 'App Store'),
                             ],
                           )
                         ],
@@ -1263,7 +1263,7 @@ Widget _buildPaymentMethodCard({
                           Align(
                             alignment: Alignment.centerRight,
                             child: Image.asset(
-                              'assets/Group 87935.png',
+                              'assets/Group87935.png',
                               width: 80,
                               height: 65.7,
                             ),

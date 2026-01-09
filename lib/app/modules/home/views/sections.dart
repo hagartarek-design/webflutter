@@ -98,7 +98,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -166,8 +166,8 @@ var g=controller.course_info.map((e)=>e.section?.length);
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -184,7 +184,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -394,7 +394,7 @@ return     Stack( children: [
       borderRadius: BorderRadius.circular(16),
     ),
     child: Image.asset(
-      'assets/lecture card 1.png',
+      'assets/lecturecard1.png',
       fit: BoxFit.cover, // Makes the image fill the container
     ),
   ),
@@ -1207,88 +1207,7 @@ return     Stack( children: [
     );
   }
 
-  Widget _buildClassCard(String title, String imagePath,context,isMobile) {
-    final screenWidth=MediaQuery.of(context).size.width;
-    return Column(children: [ 
-      Container(
-      width:isMobile?360: 246,
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 212, 221, 232),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            height: 180,width:screenWidth,
-            padding: const EdgeInsets.all(8),
-            child: Image.asset(imagePath, fit: BoxFit.contain),
-          ),
-         
-        ],
-      ),
-    )
-    , Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              title,
-              style: const TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-                color: Color.fromARGB(255, 6, 69, 152),
-              ),
-            ),
-          ),
-    ],); 
-   
-  }
-Widget _buildPaymentMethodCard({
-  required String image,
-  required String text,
-  required String value,
-  double imageWidth = 40,isMobile
-}) {
-    return Obx(() => Container(
-    width:isMobile?343: 330,
-    height: 166,
-    decoration: BoxDecoration(
-      color: Color.fromARGB(255, 245, 245, 245),
-      borderRadius: BorderRadius.circular(16),
-    ),
-    padding: EdgeInsets.fromLTRB(24, 40, 24, 24),
-    child: Column(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      mainAxisAlignment: MainAxisAlignment.center,
-      spacing: 16,
-      children: [
-        Container(
-          width: 282,
-          child: Row(
-            spacing: 16,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Radio<String>(
-                value: value,
-                groupValue: selectedMethod.value,
-                onChanged: (val) {
-                 selectedMethod.value = val!;
-                },
-              ),
-              Image.asset(image, height: 16, width: imageWidth),
-            ],
-          ),
-        ),
-        Text(
-          text,
-          style: TextStyle(
-            color: Color.fromARGB(255, 6, 69, 152),
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-      ],
-    ),
-  ));
-}
+
   Widget _buildTeacherInfo(bool isMobile,screenWidth) {
     return Container(
 width: !isMobile?1280:screenWidth,     // padding: const EdgeInsets.all(16.0),
@@ -1371,18 +1290,18 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           _icon('icons/Frame (14).png'),
+                         const SizedBox(width: 12),
+                          _icon('icons/Frame(13).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (13).png'),
+                          _icon('icons/Frame(12).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (12).png'),
-                          const SizedBox(width: 12),
-                          _icon('icons/Frame (11).png'),
+                          _icon('icons/Frame(11).png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -1397,9 +1316,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame (16).png', 'Google play'),
+                          _storeButton('icons/Frame(16).png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame (15).png', 'App Store'),
+                          _storeButton('icons/Frame(15).png', 'App Store'),
                         ],
                       )
                     ],
@@ -1434,7 +1353,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group 87935.png',
+                          'assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),

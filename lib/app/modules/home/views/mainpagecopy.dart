@@ -33,7 +33,7 @@ class MenuDialog extends StatelessWidget {
             Align(
                 alignment: Alignment.topRight,
                 child: Image.asset(
-                  'assets/Group 87935.png',
+                  'assets/Group87935.png',
                   height: 40,
                 ),
               ),

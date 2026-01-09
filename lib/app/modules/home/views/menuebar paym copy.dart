@@ -206,7 +206,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Group 23576.png',height: 16,width: 16,),
+              Image.asset('assets/Group23576.png',height: 16,width: 16,),
              Radio<String>(
                                             value: "فوري باي",
                                             groupValue: SelectedMethod,
@@ -240,7 +240,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Frame (17).png',height: 16,width: 16,),
+              Image.asset('assets/Frame(17).png',height: 16,width: 16,),
          Radio<String>(
                                             value:chargeCard.toString(),
                                             groupValue: SelectedMethod,
@@ -278,7 +278,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Group 87970.png',height: 16,width: 79,),
+              Image.asset('assets/Group87970.png',height: 16,width: 79,),
                Radio<String>(
                                             value: "بطاقة دفع اءتمان",
                                             groupValue: SelectedMethod,
@@ -308,7 +308,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Frame 203.png',height: 16,width: 76.89,)
+              Image.asset('assets/Frame203.png',height: 16,width: 76.89,)
           , Radio<String>(
                                             value: "دفع-ائتمان",
                                             groupValue: SelectedMethod,

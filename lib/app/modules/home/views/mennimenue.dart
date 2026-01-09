@@ -47,7 +47,7 @@ class mennimenu extends StatelessWidget {
             const SizedBox(height: 20),
             Center(
               child: Image.asset(
-                'assets/logo ashtar withe phase 2 (2).png',
+                'assets/logoashtarwithephase2(2).png',
                 width: isSmallScreen ? 100.0 : 143.51,
                 height: isSmallScreen ? 80.0 : 118.0,
                 fit: BoxFit.contain,

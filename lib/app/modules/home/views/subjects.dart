@@ -48,7 +48,7 @@ class Subjects extends StatelessWidget {
               // onTap: () => _showMenuDialog(context),
               child: const Icon(Icons.menu, color: Colors.white),
             ),
-            Image.asset('assets/Group 87935.png', width: 55),
+            Image.asset('assets/Group87935.png', width: 55),
           ],
         ),
       );
@@ -69,8 +69,8 @@ class Subjects extends StatelessWidget {
                       height: 40,
                       child: const CircleAvatar(radius: 24),
                     ),
-                    Image.asset('icons/Vector (3).png', width: 40, height: 41),
-                    Image.asset('icons/Vector (2).png', width: 39.02, height: 40)
+                    Image.asset('icons/Vector(3).png', width: 40, height: 41),
+                    Image.asset('icons/Vector(2).png', width: 39.02, height: 40)
                   ],
                 ),
                 Row(
@@ -83,7 +83,7 @@ class Subjects extends StatelessWidget {
                     _navText('ذاكر'),
                     _navText('الرئيسية', highlight: true),
                     const SizedBox(width: 12),
-                    Image.asset('assets/Group 87935.png', width: 55),
+                    Image.asset('assets/Group87935.png', width: 55),
                   ],
                 ),
               ],
@@ -184,7 +184,7 @@ class Subjects extends StatelessWidget {
       onTap: () => Navigator.push(context, 
           MaterialPageRoute(builder: (context) => Subjecttype())),
       child: Image.asset(
-        'assets/thumb 4.png',
+        'assets/thumb4.png',
         width: screenWidth,
         fit: BoxFit.fitWidth,
       ),
@@ -524,7 +524,7 @@ controller.addsectiontocart(id: ids!);
           const SizedBox(height: 12),
           _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
           const SizedBox(height: 12),
-          _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+          _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
           const SizedBox(height: 12),
           _buildSocialIcons(),
           const SizedBox(height: 16),
@@ -560,7 +560,7 @@ controller.addsectiontocart(id: ids!);
           const Align(
             alignment: Alignment.centerRight,
             child: Image(
-              image: AssetImage('assets/Group 87935.png'),
+              image: AssetImage('assets/Group87935.png'),
               width: 80,
               height: 65.7,
             ),
@@ -611,13 +611,13 @@ controller.addsectiontocart(id: ids!);
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        _icon('icons/Frame (14).png'),
+        _icon('icons/Frame(14).png'),
         const SizedBox(width: 12),
-        _icon('icons/Frame (13).png'),
+        _icon('icons/Frame(13).png'),
         const SizedBox(width: 12),
-        _icon('icons/Frame (12).png'),
+        _icon('icons/Frame(12).png'),
         const SizedBox(width: 12),
-        _icon('icons/Frame (11).png'),
+        _icon('icons/Frame(11).png'),
       ],
     );
   }
@@ -626,9 +626,9 @@ controller.addsectiontocart(id: ids!);
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        _storeButton('icons/Frame (16).png', 'Google play'),
+        _storeButton('icons/Frame(16).png', 'Google play'),
         const SizedBox(width: 12),
-        _storeButton('icons/Frame (15).png', 'App Store'),
+        _storeButton('icons/Frame(15).png', 'App Store'),
       ],
     );
   }

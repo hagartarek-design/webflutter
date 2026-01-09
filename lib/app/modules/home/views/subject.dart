@@ -101,7 +101,7 @@ final lengths2 = controller.courses2
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -169,8 +169,8 @@ final lengths2 = controller.courses2
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -187,7 +187,7 @@ final lengths2 = controller.courses2
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -350,7 +350,7 @@ await      FutureBuilder<bool>(
       
       child: _buildClassCard(
         info['course_num'].toString(),
-        'assets/Frame 1597882438 (5).png',
+        'assets/Frame1597882438(5).png',
         context,
         true, // isMobile
       ),
@@ -380,12 +380,12 @@ await      FutureBuilder<bool>(
 //                     onTap: (){
 //                   Navigator.push(context, MaterialPageRoute(builder: (context){return  Subjects();})) ;  
 //                     },
-//                     child:                 _buildClassCard('${controller.courses2[index].course_info?[index]['course_num'].toString()}', 'assets/Frame 1597882438 (5).png',context,isMobile)
+//                     child:                 _buildClassCard('${controller.courses2[index].course_info?[index]['course_num'].toString()}', 'assets/Frame1597882438 (5).png',context,isMobile)
 //          );
 //                 })
             // SizedBox(height: 24,);
-                // _buildClassCard('القسم التاني', 'assets/Frame 1597882438@2x.png',context,isMobile),
-                // _buildClassCard('القسم الاول', 'assets/Frame 1597882438.png',context,isMobile),
+                // _buildClassCard('القسم التاني', 'assets/Frame1597882438@2x.png',context,isMobile),
+                // _buildClassCard('القسم الاول', 'assets/Frame1597882438.png',context,isMobile),
                 
 // Wrap(
 //                  spacing: 16, 
@@ -396,9 +396,9 @@ await      FutureBuilder<bool>(
 //                     },
 //                     child:
                     
-//                 _buildClassCard('قسم الدروس المتنوعه', 'assets/Frame 1597882438 (3).png',context,isMobile),)  ,
-//                 _buildClassCard('القسم السادس','assets/Frame 1597882438 (1).png',context,isMobile),
-//                 _buildClassCard('القسم الخامس', 'assets/Frame 1597882438 (2).png',context,isMobile),
+//                 _buildClassCard('قسم الدروس المتنوعه', 'assets/Frame1597882438 (3).png',context,isMobile),)  ,
+//                 _buildClassCard('القسم السادس','assets/Frame1597882438 (1).png',context,isMobile),
+//                 _buildClassCard('القسم الخامس', 'assets/Frame1597882438 (2).png',context,isMobile),
 //                 ],),
        
       
@@ -554,7 +554,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame (10).png', width: 43, height: 40),
+          Image.asset('assets/Frame(10).png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',
@@ -632,13 +632,13 @@ Widget _buildFooter(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame (14).png'),
+                          _icon('icons/Frame(14).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (13).png'),
+                          _icon('icons/Frame(13).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (12).png'),
+                          _icon('icons/Frame(12).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (11).png'),
+                          _icon('icons/Frame(11).png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -653,9 +653,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame (16).png', 'Google play'),
+                          _storeButton('icons/Frame(16).png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame (15).png', 'App Store'),
+                          _storeButton('icons/Frame(15).png', 'App Store'),
                         ],
                       )
                     ],
@@ -686,7 +686,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group 87935.png',
+                          'assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),

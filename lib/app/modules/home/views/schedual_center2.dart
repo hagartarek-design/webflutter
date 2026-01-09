@@ -84,7 +84,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -152,8 +152,8 @@ var g=controller.course_info.map((e)=>e.section?.length);
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
+                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -170,7 +170,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group 87935.png', width: 55),
+                      Image.asset('assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -272,7 +272,7 @@ Container(
           selected3.value = !selected3.value;
         },
         child: buildCard(
-          imagePath: 'assets/Frame 1597883113.png',
+          imagePath: 'assets/Frame1597883113.png',
           text: 'تاكيد التسجيل',
           isMobile: isMobile,
         ),
@@ -286,7 +286,7 @@ Container(
           selected2.value = !selected2.value;
         },
         child: buildCard(
-          imagePath: 'assets/Frame 1597883116.png',
+          imagePath: 'assets/Frame1597883116.png',
           text: 'معلومات عن السنتر',
           isMobile: isMobile,
         ),
@@ -300,7 +300,7 @@ Container(
           selected.value = !selected.value;
         },
         child: buildCard(
-          imagePath: 'assets/Frame 1597883114.png',
+          imagePath: 'assets/Frame1597883114.png',
           text: 'معلومات دراسية',
           isMobile: isMobile,
         ),
@@ -313,7 +313,7 @@ Container(
               selectedSection.value == 'personal' ? null : 'personal';
         },
         child: buildCard(
-          imagePath: 'assets/Frame 1597883100.png',
+          imagePath: 'assets/Frame1597883100.png',
           text: 'معلومات شخصيه',
           isMobile: isMobile,
         ),
@@ -1729,41 +1729,7 @@ Directionality(
     );
   }
 
-  Widget _buildClassCard(String title, String imagePath,context) {
-    final screenWidth=MediaQuery.of(context).size.width;
-    return Column(children: [ 
-      Container(
-      width: 363,
-      decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 212, 221, 232),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            height: 180,width:screenWidth,
-            padding: const EdgeInsets.all(8),
-            child: Image.asset(imagePath, fit: BoxFit.contain),
-          ),
-         
-        ],
-      ),
-    )
-    , Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              title,
-              style: const TextStyle(
-                fontWeight: FontWeight.w600,
-                fontSize: 20,
-                color: Color.fromARGB(255, 6, 69, 152),
-              ),
-            ),
-          ),
-    ],); 
-   
-  }
-
+ 
   Widget _buildTeacherInfo(bool isMobile,screenWidth) {
     return Container(
 width: !isMobile?1280:screenWidth,     // padding: const EdgeInsets.all(16.0),
@@ -1886,18 +1852,18 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          _icon('icons/Frame (14).png'),
+                          _icon('icons/Frame(14).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (13).png'),
+                          _icon('icons/Frame(13).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (12).png'),
+                          _icon('icons/Frame(12).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (11).png'),
+                          _icon('icons/Frame(11).png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -1912,9 +1878,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Wrap(
                 alignment: WrapAlignment.start,        children: [
-                          _storeButton('icons/Frame (16).png', 'Google play'),
+                          _storeButton('icons/Frame(16).png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame (15).png', 'App Store'),
+                          _storeButton('icons/Frame(15).png', 'App Store'),
                         ],
                       )
                     ],
@@ -1949,7 +1915,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group 87935.png',
+                          'assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),

@@ -87,7 +87,7 @@ initialPage: 1
 ,
               Row(
                 children: [
-              Image.asset('assets/Group 87935.png', width: 55),
+              Image.asset('assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -186,7 +186,7 @@ initialPage: 1
 
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>subjectBooks2()));
               },) ,
-                _buildClassCard('المحضرات المباشرة', 'assets/2nd sec. .png',context),
+                _buildClassCard('المحضرات المباشرة', 'assets/2ndsec.png',context),
             InkWell(child:  _buildClassCard('شوف محضراتك', 'assets/use7.png',context) ,onTap: (){
               Navigator.push(context, MaterialPageRoute(builder:( context){
 return Subjectbooks();
@@ -437,7 +437,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame (10).png', width: 43, height: 40),
+          Image.asset('assets/Frame(10).png', width: 43, height: 40),
           const SizedBox(height: 8),
           const 
           AutoTranslateText(text:'الأستاذ شريف البدري',fontSize: 32,
@@ -505,18 +505,18 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame (14).png'),
+                          _icon('icons/Frame(14).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (13).png'),
+                          _icon('icons/Frame(13).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (12).png'),
+                          _icon('icons/Frame(12).png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame (11).png'),
+                          _icon('icons/Frame(11).png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -531,9 +531,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame (16).png', 'Google play'),
+                          _storeButton('icons/Frame(16).png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame (15).png', 'App Store'),
+                          _storeButton('icons/Frame(15).png', 'App Store'),
                         ],
                       )
                     ],
@@ -564,7 +564,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group 87935.png',
+                          'assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
