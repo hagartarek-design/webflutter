@@ -1,5 +1,38 @@
+# name: Deploy Flutter Web to Firebase Hosting
+
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   build_and_deploy:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Setup Flutter
+#         uses: subosito/flutter-action@v2
+#         with:
+#           flutter-version: '3.16.0'
+
+#       - name: Install dependencies
+#         run: flutter pub get
+
+#       - name: Build Flutter Web
+#         run: flutter build web
+
+#       - name: Deploy to Firebase Hosting
+#         uses: FirebaseExtended/action-hosting-deploy@v0
+#         with:
+#           repoToken: ${{ secrets.GITHUB_TOKEN }}
+#           firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
+#           projectId: student-51d79
 name: Deploy Flutter Web to Firebase Hosting
 
+# Trigger the workflow on push to main branch
 on:
   push:
     branches:
@@ -10,24 +43,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      # Step 1: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Step 2: Setup Flutter
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: stable
-          flutter-version: '3.38.6'
+          flutter-version: '3.38.6' # Use the stable Flutter version you want
 
-      - name: Install dependencies
+      # Step 3: Install dependencies
+      - name: Install Flutter dependencies
         run: flutter pub get
 
+      # Step 4: Build Flutter Web
       - name: Build Flutter Web
-        run: flutter build web
+        run: flutter build web --release
 
+      # Step 5: Deploy to Firebase Hosting
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }} # JSON content of Service Account
           projectId: student-51d79
