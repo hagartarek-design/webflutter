@@ -203,7 +203,7 @@ dependencies:
   firebase_auth: ^6.1.1
   # dependencies:
   get: ^4.6.5  # last version compatible with your Flutter SDK
-  chewie: ^1.13.0
+  chewie: ^1.10.0 
   video_player: ^2.6.0
 
   # fl_chart: ^1.1.1 
