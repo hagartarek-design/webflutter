@@ -1,4 +1,4 @@
-name: Flutter Web Deploy
+name: Flutter Web CI
 
 on:
   push:
@@ -17,16 +17,11 @@ jobs:
           channel: beta
           flutter-version: '3.40.0-0.2.pre'
 
+      - name: Flutter doctor
+        run: flutter doctor -v
+
       - name: Flutter pub get
         run: flutter pub get
 
       - name: Build Flutter Web
         run: flutter build web
-
-      - name: Deploy to Firebase Preview
-        run: |
-          npx firebase-tools@latest hosting:channel:deploy preview \
-            --expires 7d \
-            --project student-51d79
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
