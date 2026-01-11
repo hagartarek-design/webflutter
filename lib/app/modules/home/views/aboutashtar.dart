@@ -3,7 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_social_button/flutter_social_button.dart';
+// import 'package:flutter_social_button/flutter_social_button.dart';
 import 'package:get/get.dart';
 import 'package:my_app/app/models/wallet.dart';
 import 'package:my_app/app/modules/home/controllers/home_controller.dart';
@@ -451,31 +451,31 @@ final lengths2 = controller.courses2
                   Row(//spacing: 12,
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                  IconButton(
-          icon: FaIcon(FontAwesomeIcons.facebookF, color:  Color.fromARGB(255,6,69,152), size: 20),
-          onPressed: () {
-          },
-        ),
-                  IconButton(
-          icon: FaIcon(FontAwesomeIcons.youtube, color:  Color.fromARGB(255,6,69,152), size: 20),
-          onPressed: () {
-          },
-        )
-             , IconButton(
-          icon: FaIcon(FontAwesomeIcons.instagram, color: Color.fromARGB(255,6,69,152), size: 20),
-          onPressed: () {
-          },
-        )
-             , IconButton(
-          icon: FaIcon(FontAwesomeIcons.facebookMessenger, color: Color.fromARGB(255,6,69,152), size: 20),
-          onPressed: () {
-          },
-        )
-             , IconButton(
-          icon: FaIcon(FontAwesomeIcons.tiktok, color: Color.fromARGB(255,6,69,152), size: 20),
-          onPressed: () {
-          },
-        ),
+        //           IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.facebookF, color:  Color.fromARGB(255,6,69,152), size: 20),
+        //   onPressed: () {
+        //   },
+        // ),
+        //           IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.youtube, color:  Color.fromARGB(255,6,69,152), size: 20),
+        //   onPressed: () {
+        //   },
+        // )
+        //      , IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.instagram, color: Color.fromARGB(255,6,69,152), size: 20),
+        //   onPressed: () {
+        //   },
+        // )
+        //      , IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.facebookMessenger, color: Color.fromARGB(255,6,69,152), size: 20),
+        //   onPressed: () {
+        //   },
+        // )
+        //      , IconButton(
+        //   icon: FaIcon(FontAwesomeIcons.tiktok, color: Color.fromARGB(255,6,69,152), size: 20),
+        //   onPressed: () {
+        //   },
+        // ),
                       
                       ],),
                       
