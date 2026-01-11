@@ -13,10 +13,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Flutter
+      - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: stable
+         channel: beta
+         flutter-version: '3.40.0-0.2.pre'
+
 
       - name: Flutter pub get
         run: flutter pub get

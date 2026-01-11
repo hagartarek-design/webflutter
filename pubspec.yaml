@@ -202,7 +202,7 @@ dependencies:
   firebase_core: ^4.2.0
   firebase_auth: ^6.1.1
   # dependencies:
-  get: ^4.6.5  # last version compatible with your Flutter SDK
+  get: ^4.6.5 
   chewie: ^1.10.0 
   video_player: ^2.6.0
 
