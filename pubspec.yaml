@@ -163,8 +163,10 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  # environment:
-  sdk: ">=3.2.0 <4.0.0"
+  sdk: ">=3.8.0 <4.0.0"
+
+
+
 
 
 dependencies:
@@ -179,6 +181,7 @@ dependencies:
   # web: ^1.1.1
   # google_identity_services_web: ^0.2.0
   # firebase_core: 2.24.1  # بدون ^
+  syncfusion_flutter_pdfviewer: ^31.1.23
   # firebase_auth: 4.15.1  # بدون ^
   flutter_facebook_auth: ^7.1.2
   shared_preferences: ^2.5.3
@@ -189,7 +192,7 @@ dependencies:
   percent_indicator: ^4.2.5
   video_player: ^2.10.0
   chewie: ^1.11.3
-  syncfusion_flutter_pdfviewer: ^30.2.7
+  # syncfusion_flutter_pdfviewer: ^30.2.7
   # بدون ^
   flutter_cache_manager: ^3.3.1
   pdf: ^3.11.3
