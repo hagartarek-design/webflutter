@@ -202,7 +202,7 @@ dependencies:
   flutter_translate: ^4.1.0
   firebase_core: ^4.2.0
   firebase_auth: ^6.1.1
-  fl_chart: ^1.1.1
+  # fl_chart: ^1.1.1 
   # google_sign_in: ^6.2.2
   # google_sign_in: ^6.2.2
 dev_dependencies:
