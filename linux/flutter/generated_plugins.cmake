@@ -3,6 +3,7 @@
 #
 
 list(APPEND FLUTTER_PLUGIN_LIST
+  custom_mouse_cursor
   flutter_secure_storage_linux
   printing
   syncfusion_pdfviewer_linux
