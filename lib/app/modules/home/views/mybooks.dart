@@ -296,7 +296,7 @@ Container(
                               width: 246,
                             ):
                               Image.asset(
-                           'assets/ملازمي.png', 
+                           'assets/malazmy.png', 
                               width:isMobile?167.5: 246,
                             ),
                           ),
