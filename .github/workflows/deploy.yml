@@ -1,24 +1,21 @@
-name: Flutter Web → Firebase Hosting
+name: Flutter Web Deploy
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-         channel: beta
-         flutter-version: '3.40.0-0.2.pre'
-
+          channel: beta
+          flutter-version: '3.40.0-0.2.pre'
 
       - name: Flutter pub get
         run: flutter pub get
@@ -26,9 +23,10 @@ jobs:
       - name: Build Flutter Web
         run: flutter build web
 
-      - name: Deploy to Firebase Hosting
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_TOKEN }}"
-          projectId: student-51d79
+      - name: Deploy to Firebase Preview
+        run: |
+          npx firebase-tools@latest hosting:channel:deploy preview \
+            --expires 7d \
+            --project student-51d79
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
