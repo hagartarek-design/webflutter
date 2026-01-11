@@ -187,7 +187,7 @@ dependencies:
   signature: ^6.3.0
   material_symbols_icons: ^4.2815.1
   percent_indicator: ^4.2.5
-  video_player: ^2.10.0
+  # video_player: ^2.10.0
   chewie: ^1.11.3
   # syncfusion_flutter_pdfviewer: 31.1.23  # بدون ^
   # flutter_cache_manager: ^3.4.1
