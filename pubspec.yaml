@@ -191,7 +191,7 @@ dependencies:
   # syncfusion_flutter_pdfviewer: 31.1.23  # بدون ^
   # flutter_cache_manager: ^3.4.1
   pdf: ^3.11.3
-  printing: ^5.13.1
+  # printing: ^5.13.1
   intl: ^0.19.0
   flutter_timer_countdown: ^1.0.7
   flutter_social_button: ^1.1.6+1
