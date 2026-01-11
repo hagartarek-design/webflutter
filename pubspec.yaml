@@ -190,7 +190,7 @@ dependencies:
   video_player: ^2.10.0
   chewie: ^1.11.3
   syncfusion_flutter_pdfviewer: 31.1.23  # بدون ^
-  flutter_cache_manager: ^3.4.1
+  flutter_cache_manager: ^3.3.1
   pdf: ^3.11.3
   printing: ^5.13.1
   fl_chart: ^0.63.0
