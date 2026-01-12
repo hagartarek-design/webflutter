@@ -143,8 +143,8 @@ class HomeView extends GetView<HomeController> {
                 ],
               ),
             ),
-            Image.asset( 
-              'assets/teacherscover.png',
+            Image.network( 
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
