@@ -1,6 +1,5 @@
 name: Flutter Web CI & Deploy to Firebase
 
-# Run workflow on push to main branch
 on:
   push:
     branches:
@@ -11,32 +10,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Setup Flutter
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.38.6'  # استبدل بالنسخة اللي انت عايزها
+          flutter-version: '3.38.6' 
           channel: stable
           cache: false
             
-      # Step 3: Install dependencies
       - name: Install Flutter dependencies
         run: flutter pub get
 
-      # Step 4: Build Flutter Web
       - name: Build Flutter Web
         run: flutter build web --release
 
-      # Step 5: Deploy to Firebase Hosting (Preview Channel)
       - name: Deploy to Firebase Hosting (Preview Channel)
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }} # JSON Service Account
+          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           projectId: student-51d79
-          channelId: ci-preview        # اسم القناة
-          expires: 7d                  # مدة بقاء preview channel (اختياري)
+          channelId: ci-preview        
+          expires: 7d                  
