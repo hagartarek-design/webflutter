@@ -218,122 +218,124 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/signup221.png
-    - assets/logo1.png
-    - assets/Google@2x(1).png
-    - assets/facebookcircle.png
-    - assets/ashtar.png
-    - assets/login2.png
-    - assets/Group987935.png
-    - assets/forgotpassword1.png
-    - assets/teacherscover.png
-    - assets/Frame(10).png
-    - assets/1stsec.2x.png
-    - assets/2ndsec.png
-    - assets/thumb4.png
-    - assets/3rdsec.2.png
-    - icons/Group.png
-    - icons/Frame(11).png
-    - icons/Frame(12).png
-    - icons/Frame(13).png
-    - icons/Frame(14).png
-    - icons/Frame(15).png
-    - icons/Frame(16).png
-    - icons/location.png
-    - icons/Phone.png
-    - icons/sms(1).png
-    - icons/Vector.png
-    - icons/Vector(2).png
-    - icons/Vector(3).png
-    - icons/Component222.png
-    - assets/use1.png
-    - assets/use2.png
-    - assets/use3.png
-    - assets/use4.png
-    - assets/use5.png
-    - assets/use6.png
-    - assets/use7.png
-    - assets/Frame1597882438(2).png
-    - assets/Frame1597882438(1).png
-    - assets/Frame1597882438(3).png
-    - assets/Frame1597882438(4).png
-    - assets/Frame1597882438(5).png
-    - assets/Frame1597882438.png
-    - assets/Frame1597882438@2x.png
-    - assets/lecturecard.png
-    - assets/bocket.png
-    - assets/Frame(17).png
-    - assets/Icon_21_.png
-    - assets/Group23576.png
-    - assets/Frame203.png
-    - assets/Group87970.png
-    - assets/Frame1597882438(6).png
-    - assets/Frame1597882438(7).png
-    - assets/video-play.png
-    - assets/Question.png
-    - assets/Question(1).png
-    - assets/icons.png
-    - assets/icons(1).png
-    - assets/Group@2x.png
-    - assets/arrowleft.png
-    - assets/Group(12).png
-    - assets/Group(10).png
-    - assets/Frame1597882438(8).png
-    - assets/document-text.png
-    - assets/malazm.jpg
-    - assets/Component233.png
-    - assets/Component232.png
-    - assets/Component232(1).png
-    - assets/Component234.png
-    - assets/Group(1).png
-    - assets/Group.png
-    - assets/Frame.png
-    - assets/schedule.png
-    - assets/Frame(1).png
-    - assets/Frame1597883100.png
-    - assets/Frame1597883113.png
-    - assets/Frame1597883114.png
-    - assets/Frame1597883116.png
-    - assets/OIP1.png
-    - assets/p-image.jpg
-    - assets/logoashtarwithephase2(2).png
-    - assets/ash7enma7faztak1.png
-    - assets/Vector.png
-    - assets/walletCard2.png
-    - assets/Icon.png
-    - assets/Vector(2).png
-    - assets/empty-wallet-change.png
-    - assets/Group(3).png
-    - assets/mlazm2@2x.png
-    - assets/Ellipse1.png
-    - assets/lecturecard1.png
-    - assets/mlazm.png
-    - assets/eg-ar-phy-g10-t1-cover1.png
-    - assets/clock.png
-    - assets/Frame2.png
-    - assets/Group23.png
-    - assets/Group2.png
-    - assets/Frame12.png
-    - assets/1.png
-    - assets/2.png
-    - assets/3.png
-    - assets/4.png
-    - assets/5.png
-    - assets/wrong.png
-    - assets/right.png
-    - assets/Frame1597883416.png
-    - assets/Frame1597883415(1).png
-    - assets/Frame1597883415.png
-    - assets/ashtarlogo.png
-    - assets/bigright.png
-    - assets/emptycard.png
-    - assets/Frame(3).png
-    - assets/esterga3.png
-    - assets/Group87935.png
-    # - assets/شحن محفظتك.png
-    # # - assets/شراء كورس.png
-    - assets/malazmy.png
-    - assets/mybooks.png
-    # -
-    # - assets/close-square.png
-    # - assets/Component 222.png
+    - assets/
+    - icons/
+    # signup221.png
+    # - assets/logo1.png
+    # - assets/Google@2x(1).png
+    # - assets/facebookcircle.png
+    # - assets/ashtar.png
+    # - assets/login2.png
+    # - assets/Group987935.png
+    # - assets/forgotpassword1.png
+    # - assets/teacherscover.png
+    # - assets/Frame(10).png
+    # - assets/1stsec.2x.png
+    # - assets/2ndsec.png
+    # - assets/thumb4.png
+    # - assets/3rdsec.2.png
+    # - icons/Group.png
+    # - icons/Frame(11).png
+    # - icons/Frame(12).png
+    # - icons/Frame(13).png
+    # - icons/Frame(14).png
+    # - icons/Frame(15).png
+    # - icons/Frame(16).png
+    # - icons/location.png
+    # - icons/Phone.png
+    # - icons/sms(1).png
+    # - icons/Vector.png
+    # - icons/Vector(2).png
+    # - icons/Vector(3).png
+    # - icons/Component222.png
+    # - assets/use1.png
+    # - assets/use2.png
+    # - assets/use3.png
+    # - assets/use4.png
+    # - assets/use5.png
+    # - assets/use6.png
+    # - assets/use7.png
+    # - assets/Frame1597882438(2).png
+    # - assets/Frame1597882438(1).png
+    # - assets/Frame1597882438(3).png
+    # - assets/Frame1597882438(4).png
+    # - assets/Frame1597882438(5).png
+    # - assets/Frame1597882438.png
+    # - assets/Frame1597882438@2x.png
+    # - assets/lecturecard.png
+    # - assets/bocket.png
+    # - assets/Frame(17).png
+    # - assets/Icon_21_.png
+    # - assets/Group23576.png
+    # - assets/Frame203.png
+    # - assets/Group87970.png
+    # - assets/Frame1597882438(6).png
+    # - assets/Frame1597882438(7).png
+    # - assets/video-play.png
+    # - assets/Question.png
+    # - assets/Question(1).png
+    # - assets/icons.png
+    # - assets/icons(1).png
+    # - assets/Group@2x.png
+    # - assets/arrowleft.png
+    # - assets/Group(12).png
+    # - assets/Group(10).png
+    # - assets/Frame1597882438(8).png
+    # - assets/document-text.png
+    # - assets/malazm.jpg
+    # - assets/Component233.png
+    # - assets/Component232.png
+    # - assets/Component232(1).png
+    # - assets/Component234.png
+    # - assets/Group(1).png
+    # - assets/Group.png
+    # - assets/Frame.png
+    # - assets/schedule.png
+    # - assets/Frame(1).png
+    # - assets/Frame1597883100.png
+    # - assets/Frame1597883113.png
+    # - assets/Frame1597883114.png
+    # - assets/Frame1597883116.png
+    # - assets/OIP1.png
+    # - assets/p-image.jpg
+    # - assets/logoashtarwithephase2(2).png
+    # - assets/ash7enma7faztak1.png
+    # - assets/Vector.png
+    # - assets/walletCard2.png
+    # - assets/Icon.png
+    # - assets/Vector(2).png
+    # - assets/empty-wallet-change.png
+    # - assets/Group(3).png
+    # - assets/mlazm2@2x.png
+    # - assets/Ellipse1.png
+    # - assets/lecturecard1.png
+    # - assets/mlazm.png
+    # - assets/eg-ar-phy-g10-t1-cover1.png
+    # - assets/clock.png
+    # - assets/Frame2.png
+    # - assets/Group23.png
+    # - assets/Group2.png
+    # - assets/Frame12.png
+    # - assets/1.png
+    # - assets/2.png
+    # - assets/3.png
+    # - assets/4.png
+    # - assets/5.png
+    # - assets/wrong.png
+    # - assets/right.png
+    # - assets/Frame1597883416.png
+    # - assets/Frame1597883415(1).png
+    # - assets/Frame1597883415.png
+    # - assets/ashtarlogo.png
+    # - assets/bigright.png
+    # - assets/emptycard.png
+    # - assets/Frame(3).png
+    # - assets/esterga3.png
+    # - assets/Group87935.png
+    # # - assets/شحن محفظتك.png
+    # # # - assets/شراء كورس.png
+    # - assets/malazmy.png
+    # - assets/mybooks.png
+    # # -
+    # # - assets/close-square.png
+    # # - assets/Component 222.png
