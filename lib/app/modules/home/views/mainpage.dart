@@ -10,12 +10,14 @@ import 'package:my_app/app/modules/home/views/signup.dart';
 import '../controllers/home_controller.dart';
 
 
+
 class HomeView extends GetView<HomeController> {
    HomeView({super.key});
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final isMobile = screenWidth < 600;
+    final isMobile = screenWidth < 800;
+    final isTablet = screenWidth < 1200;
 
     return Scaffold(
       appBar:isMobile? 
@@ -38,7 +40,7 @@ class HomeView extends GetView<HomeController> {
 
        }, child:  Icon(Icons.menu, color:Colors.white,))   
 ,
-              Row(
+              Wrap(
                 children: [
               Image.asset('assets/Group87935.png', width: 55),
                 ],
@@ -90,27 +92,27 @@ class HomeView extends GetView<HomeController> {
         title: Center(
           child: Container(
             width: screenWidth * 0.95,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Wrap(
+              runAlignment: WrapAlignment.spaceBetween,
               children: [
-                Row(
+                Wrap(
                   children: [
-                   _buildButton('تسجيل دخول',context, isPrimary: true)
+                   _buildButton('تسجيل دخول',context, isTablet,isPrimary: true)
                     
-                    ,const SizedBox(width: 12),
-                _buildButton('انشاء حساب',context),  
+                    , SizedBox(width:isTablet?3: 12),
+                _buildButton('انشاء حساب',isTablet,context),  
                   ],
                 ),
-                if (!isMobile)
-                  Row(
+                if (!isMobile) 
+                  Wrap(
                     children: [
-                      _navText('الرئيسية', highlight: true),
-                      _navText('ذاكر'),
-                      _navText('مدرسينا'),
-                      _navText('كورساتى'),
-                      _navText('مصادري'),
-                      _navText('عن أشطر'),
-                      _navText('تواصل معنا'),
+                      _navText('الرئيسية', highlight: true,isMobile),
+                      _navText('ذاكر',isMobile),
+                      _navText('مدرسينا',isMobile),
+                      _navText('كورساتى',isMobile),
+                      _navText('مصادري',isMobile),
+                      _navText('عن أشطر',isMobile),
+                      _navText('تواصل معنا',isMobile),
                       const SizedBox(width: 12),
                       Image.asset('assets/Group87935.png', width: 55),
                     ],
@@ -141,7 +143,7 @@ class HomeView extends GetView<HomeController> {
                 ],
               ),
             ),
-            Image.asset(
+            Image.asset( 
               'assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
@@ -155,9 +157,9 @@ class HomeView extends GetView<HomeController> {
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-                _buildClassCard2('الصف الأول الثانوي', 'assets/1st sec.@2x.png',context,isMobile),
-                _buildClassCard2('الصف الثاني الثانوي', 'assets/2nd sec. .png',context,isMobile),
-                _buildClassCard('الصف الثالث الثانوي', 'assets/3rd sec. 2.png',context,isMobile),
+                _buildClassCard2('الصف الأول الثانوي', 'assets/1stsec.@2x.png',context,isMobile),
+                _buildClassCard2('الصف الثاني الثانوي', 'assets/2ndsec.png',context,isMobile),
+                _buildClassCard('الصف الثالث الثانوي', 'assets/3rdsec.2.png',context,isMobile),
               ],
             ),
             const SizedBox(height: 20),
@@ -212,7 +214,7 @@ class HomeView extends GetView<HomeController> {
 
 
    
-  Widget _buildButton(String text,context, {bool isPrimary = false}) {
+  Widget _buildButton(String text,context,isTablet, {bool isPrimary = false}) {
     return Container(
       height: 50,
       child: TextButton(
@@ -247,12 +249,12 @@ class HomeView extends GetView<HomeController> {
     );
   }
 
-  Widget _navText(String text, {bool highlight = false}) {
+  Widget _navText(String text, isMobile ,{bool highlight = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child:
       //  Text('data')
-        AutoTranslateText(weight: FontWeight.w400 , fontSize: 18,text: text,highlight: highlight,color:  const Color.fromARGB(255, 181, 181, 181),)   //   style: TextStyle(
+        AutoTranslateText(weight: FontWeight.w400 , fontSize:isMobile?10: 18,text: text,highlight: highlight,color:  const Color.fromARGB(255, 181, 181, 181),)   //   style: TextStyle(
       //     fontSize: 18,
       //     fontWeight: FontWeight.w400,
       //     color: highlight

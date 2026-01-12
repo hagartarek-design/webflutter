@@ -94,8 +94,7 @@ Positioned(
   child:SizedBox(
     // alignment: Alignment.centerLeft,
     width: 94.49,height: 96.92,child: Image.asset('assets/Group(3).png' ) ,) 
-)
-      ,    // الدايرة اللي طالعة من فوق المستطيل
+),
           Positioned(
             top: -142, // تتحكم في مكان الدايرة
             left: 130,
