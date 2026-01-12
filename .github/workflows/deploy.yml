@@ -21,7 +21,8 @@ jobs:
         with:
           flutter-version: '3.38.6'  # استبدل بالنسخة اللي انت عايزها
           channel: stable
-
+          cache: false
+            
       # Step 3: Install dependencies
       - name: Install Flutter dependencies
         run: flutter pub get
