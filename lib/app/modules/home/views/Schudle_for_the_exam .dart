@@ -1111,9 +1111,9 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                               radius: 24,
                             ),
                           ),
-                          Image.asset('icons/Vector(3).png',
+                          Image.asset('icons/Vector_3.png',
                               width: 40, height: 41),
-                          Image.asset('icons/Vector(2).png',
+                          Image.asset('icons/Vector_2.png',
                               width: 39.02, height: 40)
                         ],
                       ),
@@ -1340,7 +1340,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                                                                 FontWeight
                                                                     .w500)),
                                                     Image.asset(
-                                                        'assets/Group(1).png',
+                                                        'assets/Group_1.png',
                                                         width: 30,
                                                         height: 30)
                                                   ],

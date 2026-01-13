@@ -199,8 +199,8 @@ List l=[];
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector_3.png',width: 40,height: 41,),
+                    Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -1824,7 +1824,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 112,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.end, 
 children: [
 
@@ -1846,7 +1846,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1865,7 +1865,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -1886,7 +1886,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [ 
 
 
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container( width: 787,height: 24, 
 child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
@@ -1907,7 +1907,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container( width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -1926,7 +1926,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -1962,7 +1962,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -1984,7 +1984,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -2100,7 +2100,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -2122,7 +2122,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -2242,7 +2242,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -2262,7 +2262,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -2284,7 +2284,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -2412,7 +2412,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 children: [
 
@@ -2429,7 +2429,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 ,borderRadius:BorderRadius.circular(12),
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group(10).png',width: 12.74,height: 17.1,),
+  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
 
  ],),)
 
@@ -2608,7 +2608,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame(10).png', width: 43, height: 40),
+          Image.asset('assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',
@@ -2681,18 +2681,18 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms(1).png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms_1.png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame(14).png'),
+                          _icon('icons/Frame_14.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame(13).png'),
+                          _icon('icons/Frame_13.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame(12).png'),
+                          _icon('icons/Frame_12.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame(11).png'),
+                          _icon('icons/Frame_11.png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -2707,9 +2707,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame(16).png', 'Google play'),
+                          _storeButton('icons/Frame_16.png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame(15).png', 'App Store'),
+                          _storeButton('icons/Frame_15.png', 'App Store'),
                         ],
                       )
                     ],

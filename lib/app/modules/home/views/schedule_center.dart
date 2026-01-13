@@ -142,8 +142,8 @@ var g=controller.course_info.map((e)=>e.section?.length);
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector(3).png',width: 40,height: 41,),
-                    Image.asset('icons/Vector(2).png',width: 39.02,height: 40,)
+                    Image.asset('icons/Vector_3.png',width: 40,height: 41,),
+                    Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
