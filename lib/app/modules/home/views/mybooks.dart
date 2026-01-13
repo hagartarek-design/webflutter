@@ -292,7 +292,7 @@ Container(
                             ),
                             child: !isMobile? 
                               Image.asset(
-                           'assets/mlazm2@2x.png', 
+                           'assets/mlazm22x.png', 
                               width: 246,
                             ):
                               Image.asset(

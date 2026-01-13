@@ -222,7 +222,7 @@ flutter:
   assets:
     - assets/signup221.png
     - assets/logo1.png
-    - assets/Google@2x(1).png
+    # - assets/Google2x(1).png
     - assets/facebookcircle.png
     - assets/ashtar.png
     - assets/login2.png
@@ -261,7 +261,7 @@ flutter:
     - assets/Frame1597882438(4).png
     - assets/Frame1597882438(5).png
     - assets/Frame1597882438.png
-    - assets/Frame1597882438@2x.png
+    # - assets/Frame15978824382x.png
     - assets/lecturecard.png
     - assets/bocket.png
     - assets/Frame(17).png
@@ -276,7 +276,7 @@ flutter:
     - assets/Question(1).png
     - assets/icons.png
     - assets/icons(1).png
-    - assets/Group@2x.png
+    # - assets/Group2x.png
     - assets/arrowleft.png
     - assets/Group(12).png
     - assets/Group(10).png
@@ -306,7 +306,7 @@ flutter:
     - assets/Vector(2).png
     - assets/empty-wallet-change.png
     - assets/Group(3).png
-    - assets/mlazm2@2x.png
+    - assets/mlazm22x.png
     - assets/Ellipse1.png
     - assets/lecturecard1.png
     - assets/mlazm.png

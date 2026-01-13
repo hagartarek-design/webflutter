@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app/app/modules/home/controllers/assignment2.dart';
 import 'package:my_app/app/modules/home/views/home.dart';
-import 'package:my_app/app/modules/home/views/homeafterlogin.dart';
+// import 'package:my_app/app/modules/home/views/homeafterlogin.dart';
 // import 'package:my_app/app/modules/home/views/mainpage%20copy.dart';
 import 'package:my_app/app/modules/home/views/settings.dart';
 import 'package:my_app/app/modules/home/views/signup.dart';
