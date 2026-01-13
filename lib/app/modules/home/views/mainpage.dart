@@ -157,7 +157,7 @@ class HomeView extends GetView<HomeController> {
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-                _buildClassCard2('الصف الأول الثانوي', 'assets/1stsec.2x.png',context,isMobile),
+                _buildClassCard2('الصف الأول الثانوي', 'assets/1stsec2x.png',context,isMobile),
                 _buildClassCard2('الصف الثاني الثانوي', 'assets/2ndsec.png',context,isMobile),
                 _buildClassCard('الصف الثالث الثانوي', 'assets/3rdsec.2.png',context,isMobile),
               ],
