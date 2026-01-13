@@ -542,7 +542,7 @@ InkWell(
 Column(
   spacing: 8,
   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center, children: [
-Image.asset('assets/Component232(1).png',width: 32,height: 32,)
+Image.asset('assets/Component232.png',width: 32,height: 32,)
 ,Text('pdf',style: TextStyle(fontWeight: FontWeight.w500,fontSize:16,
 color: Color.fromARGB(255, 242, 195, 42)
 
