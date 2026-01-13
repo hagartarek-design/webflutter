@@ -708,8 +708,9 @@ Widget _buildFooter(BuildContext context) {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      _buildInfoRow('icons/location.png',
-                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      
+                      // _buildInfoRow('icons/location.png',
+                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),

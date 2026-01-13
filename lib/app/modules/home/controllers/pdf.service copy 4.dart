@@ -2373,7 +2373,7 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms_1.png', 'support@ashtar.app'),
+                      _buildInfoRow('icons/sms1).png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,

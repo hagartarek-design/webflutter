@@ -1523,7 +1523,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame_10.png', width: 43, height: 40),
+          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',
@@ -1591,8 +1591,9 @@ Widget _buildFooter(BuildContext context) {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      _buildInfoRow('icons/location.png',
-                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      
+                      // _buildInfoRow('icons/location.png',
+                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),

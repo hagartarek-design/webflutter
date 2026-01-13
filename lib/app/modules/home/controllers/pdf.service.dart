@@ -1409,7 +1409,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame_10.png', width: 43, height: 40),
+          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',

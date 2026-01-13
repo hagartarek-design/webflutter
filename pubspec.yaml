@@ -221,7 +221,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
-    - icons/
+    # - icons/
     # signup221.png
     # - assets/logo1.png
     # # - assets/Google2x(1).png
@@ -341,3 +341,4 @@ flutter:
     # -
     # - assets/close-square.png
     # - assets/Component 222.png
+    
