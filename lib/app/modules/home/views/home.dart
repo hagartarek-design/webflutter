@@ -198,7 +198,7 @@ color: const Color.fromARGB(255, 245, 245, 245),
                  !isMobile?  Container(
                     width: 704,
                     height: 832,
- child :Stack(children: [  Positioned(top: 276,left: 32, child:  Image.asset('assets/signup221.png')                    // color: const Color.fromARGB(48, 244, 67, 54),
+ child :Stack(children: [  Positioned(top: 276,left: 32, child:  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/signup221.png')                    // color: const Color.fromARGB(48, 244, 67, 54),
                  ,width: 641, )]),
                 // ),
               ):Container(),
@@ -221,7 +221,7 @@ color: const Color.fromARGB(255, 245, 245, 245),
                         Container(
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.start,
-                          children: [ Image.asset('assets/logo 1.png',width: 106,height: 106,)],) 
+                          children: [ Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo1.png',width: 106,height: 106,)],) 
                           ,width: 457,height: 106,)
                      ,
                      Container(
@@ -626,7 +626,7 @@ TextButton(
  , child:  Row(
   spacing: 16,
   children: [ 
-  Image.asset('assets/facebookcircle.png',width: 24,height: 24.56,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/facebookcircle.png',width: 24,height: 24.56,),
  AutoTranslateText (text:'تسجبل دخول عبر',
     weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152),),
@@ -661,7 +661,7 @@ TextButton(
  , child:Row(
   spacing: 16,
   children: [ 
-  Image.asset('assets/Google@2x(1).png',width: 24,height: 24.56,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Google2x_1.png',width: 24,height: 24.56,),
   AutoTranslateText(text:'تسجبل دخول عبر',
     weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152), )
