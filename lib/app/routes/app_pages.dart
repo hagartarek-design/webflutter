@@ -15,7 +15,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () =>  Homeafterlogin(),
+      page: () =>  HomeView(),
       binding: HomeBinding(),
     ),
   ];

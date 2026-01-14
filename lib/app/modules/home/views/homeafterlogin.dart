@@ -182,12 +182,12 @@ initialPage: 1
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-              InkWell(child: _buildClassCard('احجز ملازمك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context) ,onTap: (){
+              InkWell(child: _buildClassCard('احجز ملازمك', 'assets/1stsec2x.png',context) ,onTap: (){
 
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>subjectBooks2()));
               },) ,
-                _buildClassCard('المحضرات المباشرة', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context),
-            InkWell(child:  _buildClassCard('شوف محضراتك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',context) ,onTap: (){
+                _buildClassCard('المحضرات المباشرة', 'assets/2ndsec.png',context),
+            InkWell(child:  _buildClassCard('شوف محضراتك', 'assets/use7.png',context) ,onTap: (){
               Navigator.push(context, MaterialPageRoute(builder:( context){
 return Subjectbooks();
               }));
@@ -201,7 +201,7 @@ return Subjectbooks();
               alignment: WrapAlignment.end,
               children: [
           InkWell(child: 
-            _buildClassCard('احجز امنحنات الشامل', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context),
+            _buildClassCard('احجز امنحنات الشامل', 'assets/1stsec2x.png',context),
           onTap: (){
             Navigator.push(context, MaterialPageRoute(builder: (context){
               return SchudleForTheExam();
@@ -231,14 +231,14 @@ ExamresultAnswerSheet()
 
 ;
 }));
-           },child: _buildClassCard('احجز السنتر', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context), )    
+           },child: _buildClassCard('احجز السنتر', 'assets/2ndsec.png',context), )    
               ],
             ),  const SizedBox(height: 20),
             
             // const SizedBox(height: 20),
 
-        Image.network(
-              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/thumb4.png',
+        Image.asset(
+              'assets/thumb4.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -410,7 +410,7 @@ ExamresultAnswerSheet()
           Container(
             height: 180,width:screenWidth,
             padding: const EdgeInsets.all(8),
-            child: Image.network(imagePath, fit: BoxFit.contain),
+            child: Image.asset(imagePath, fit: BoxFit.contain),
           ),
          
         ],
@@ -437,7 +437,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
+          Image.asset('assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const 
           AutoTranslateText(text:'الأستاذ شريف البدري',fontSize: 32,
