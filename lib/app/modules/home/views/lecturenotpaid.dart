@@ -112,7 +112,7 @@ List l=[];
                     onTap: () {},
                     child: Icon(Icons.menu, color: Colors.white),
                   ),
-                  Image.asset('assets/Group87935.png', width: 55),
+                  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                 ],
               ),
             )
@@ -132,8 +132,8 @@ List l=[];
                             height: 40,
                             child: CircleAvatar(radius: 24),
                           ),
-                          Image.asset('icons/Vector_3.png', width: 40, height: 41),
-                          Image.asset('icons/Vector_2.png', width: 39.02, height: 40)
+                          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_3.png', width: 40, height: 41),
+                          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_2.png', width: 39.02, height: 40)
                         ],
                       ),
                       if (!isMobile)
@@ -147,7 +147,7 @@ List l=[];
                             _navText('ذاكر'),
                             _navText('الرئيسية', highlight: true),
                             const SizedBox(width: 12),
-                            Image.asset('assets/Group87935.png', width: 55),
+                            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                           ],
                         ),
                     ],
@@ -228,7 +228,7 @@ List l=[];
           style: TextStyle(fontWeight: FontWeight.w400,
            fontSize: 24,color: Color.fromARGB(255, 80, 124, 181)),),SizedBox(height: 12,)
            ,Container(width: 1120,child:Row(spacing: 16, children: [
-            // Image.asset('assets/')
+            // Image.network('assets/')
 
 
            ],) ,)
@@ -399,7 +399,7 @@ AutoTranslateText(text:'المادة:الفزياء',
 AutoTranslateText(text:'5 محاضرات',
   weight: FontWeight.w500,fontSize: 14,
   color: Color.fromARGB(255, 255, 255, 255),)],)),
-          Image.asset('assets/Frame1597882438_8.png',width: 51,height: 49.87,)],) 
+          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame1597882438_8.png',width: 51,height: 49.87,)],) 
    ,   AutoTranslateText(text: '150 جنيه ',color: Color.fromARGB(255, 242, 195, 42)
         ,weight:FontWeight.w500 ,fontSize: 18
         ,),    ],),
@@ -428,7 +428,7 @@ Container(child: Wrap(
 Column(
   spacing: 8,
   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center, children: [
-Image.asset('assets/Component234.png',width: 32,height: 32,)
+Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Component234.png',width: 32,height: 32,)
 ,Text('الامتحنات والواجبات',style: TextStyle(fontWeight: 
 FontWeight.w500,fontSize:isMobile?12:16,color: Color.fromARGB(255, 222, 61, 49)),)
 
@@ -466,7 +466,7 @@ InkWell(
 Column(
   spacing: 8,
   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center, children: [
-Image.asset('assets/Component232.png',width: 32,height: 32,)
+Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Component232.png',width: 32,height: 32,)
 ,Text('pdf',style: TextStyle(fontWeight: FontWeight.w500,fontSize:isMobile?12:16,
 color: Color.fromARGB(255, 242, 195, 42)
 
@@ -528,7 +528,7 @@ print('Content items: $contentList');
 Column(
   spacing: 8,
   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment: MainAxisAlignment.center, children: [
-Image.asset('assets/Component232.png',width: 32,height: 32,)
+Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Component232.png',width: 32,height: 32,)
 ,Text('المحاضرات',style: TextStyle(fontWeight: FontWeight.w500,fontSize:isMobile?12:16,color: Color.fromARGB(255, 6, 182, 141)),)
 
 ],)
@@ -543,7 +543,7 @@ Column(
   spacing:8,
   crossAxisAlignment: CrossAxisAlignment.center,mainAxisAlignment:
    MainAxisAlignment.center, children: [
-Image.asset('assets/Component233.png',width: 32,height: 32,)
+Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Component233.png',width: 32,height: 32,)
 ,Text('محتوي الدرس',style: TextStyle(fontWeight:
  FontWeight.w500,fontSize:isMobile?12:16,
  color: Color.fromARGB(255, 245, 245, 245)),)
@@ -612,7 +612,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.start, 
 children: [
 
@@ -623,7 +623,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
 
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],));
       }),
 Container ( width: isMobile?347: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -634,7 +634,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 
  ],),)
 
@@ -646,7 +646,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.end, 
 children: [
 
@@ -654,7 +654,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
   
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 ,
  Container ( width: isMobile?347: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -667,7 +667,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [ 
 
 
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container( width: 787,height: 24, 
 child:Wrap(spacing: 12,alignment: WrapAlignment.start, 
 children: [
@@ -676,7 +676,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
   
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 
@@ -688,7 +688,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container( width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.start, 
 children: [
 
@@ -696,7 +696,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
   
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 ,Container ( width: isMobile?347: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -707,7 +707,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.start, 
 children: [
 
@@ -715,7 +715,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
   
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 
@@ -775,7 +775,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.start, 
 children: [
 
@@ -786,7 +786,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
 
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],)));
       }),
 Container ( width: isMobile?347: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -797,7 +797,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Wrap(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -805,7 +805,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -816,7 +816,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -824,7 +824,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 // ,
 //  Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -837,7 +837,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [ 
 
 
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, 
 // child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
@@ -846,7 +846,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -858,7 +858,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -866,7 +866,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -877,7 +877,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -885,7 +885,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -919,7 +919,7 @@ decoration: BoxDecoration(color: Color.fromRGBO(235, 239, 249, 1)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.start, 
 children: [
 
@@ -930,7 +930,7 @@ children: [
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
 
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],)));
       }),
 Container ( width: isMobile?347: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -941,7 +941,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -949,7 +949,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -960,7 +960,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -968,7 +968,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 // ,
 //  Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -981,7 +981,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [ 
 
 
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, 
 // child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
@@ -990,7 +990,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -1002,7 +1002,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1010,7 +1010,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -1021,7 +1021,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1029,7 +1029,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -1061,7 +1061,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.start, 
 children: [
 
@@ -1072,7 +1072,7 @@ contentList[indexcontent]['name'].toString()
  }',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152),
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],)) ,) ;
 return InkWell(onTap: (){
   Navigator.push(
@@ -1098,7 +1098,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap( alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Wrap(spacing: 12,alignment: WrapAlignment.center, 
 children: [
 
@@ -1109,7 +1109,7 @@ contentList[indexcontent]['name'].toString()
  }',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152),
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],))
   ,) ;
       }),
@@ -1121,7 +1121,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   // ) 
 ),
  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1129,7 +1129,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -1140,7 +1140,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1148,7 +1148,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 // ,
 //  Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -1161,7 +1161,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [ 
 
 
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, 
 // child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
@@ -1170,7 +1170,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -1182,7 +1182,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container( width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1190,7 +1190,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 // ,Container ( width: 837,height: 52,padding: EdgeInsets.fromLTRB(16, 14, 16, 14),
@@ -1201,7 +1201,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 // //   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 // ),
 //  child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-//   Image.asset('assets/Group (10).png',width: 12.74,height: 17.1,),
+//   Image.network('assets/Group (10).png',width: 12.74,height: 17.1,),
 // Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.end, 
 // children: [
 
@@ -1209,7 +1209,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 //   fontWeight: FontWeight.w500,fontSize: 16
 //   ),),
   
-//   Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+//   Image.network('assets/video-play.png',width: 24,height: 24,)],) ,)
 //  ],),)
 
 
@@ -1249,14 +1249,14 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 235, 239, 249)
   width: 1,color:Color.fromARGB(255, 154, 175, 228) ) 
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-    Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 Container(width: 787,height: 24, child:Row(spacing: 12,mainAxisAlignment: MainAxisAlignment.center, 
 children: [
 
   Text('${contentList[indexcontent]['name'].toString()}',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152),
   fontWeight: FontWeight.w500,fontSize: 16
   ),),
-  Image.asset('assets/video-play.png',width: 24,height: 24,)],) ,)
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/video-play.png',width: 24,height: 24,)],) ,)
       ],))
     ,);
    }),
@@ -1266,7 +1266,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
 ,borderRadius:BorderRadius.circular(12),
 ),
  child: Wrap(alignment: WrapAlignment.spaceBetween, children: [
-  Image.asset('assets/Group_10.png',width: 12.74,height: 17.1,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_10.png',width: 12.74,height: 17.1,),
 
  ],),)
 
@@ -1306,8 +1306,8 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
           Container(
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(8))  ,
             child:
-             Image.asset(
-              'assets/Frame1597882438(8).png', // Replace with your image path
+             Image.network(
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame1597882438(8).png', // Replace with your image path
               height: 200,
               width: 267,
               // fit: BoxFit.cover,
@@ -1342,7 +1342,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
       const SizedBox(height: 8),
 
       // Subject title and lectures
-    Container( width: 251,height: 98,child:Wrap( children: [Image.asset('assets/Group_12.png',height: 30,width: 30,),
+    Container( width: 251,height: 98,child:Wrap( children: [Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_12.png',height: 30,width: 30,),
       Container(width: 205,height: 98,child: Column(
         mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.end,
         children: [
@@ -1499,7 +1499,7 @@ decoration: BoxDecoration(color: Color.fromARGB(255, 255, 255, 255)
   //         Container(
   //           height: 150,
   //           padding: const EdgeInsets.all(8),
-  //           child: Image.asset(imagePath, fit: BoxFit.contain),
+  //           child: Image.network(imagePath, fit: BoxFit.contain),
   //         ),
   //         Padding(
   //           padding: const EdgeInsets.all(8.0),
@@ -1592,23 +1592,23 @@ Widget _buildFooter(BuildContext context) {
                       ),
                       const SizedBox(height: 16),
                       
-                      // _buildInfoRow('icons/location.png',
-                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/location.png',
+                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms_1.png', 'support@ashtar.app'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/sms_1.png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame_14.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_14.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_13.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_13.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_12.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_12.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_11.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_11.png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -1655,8 +1655,8 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 24),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Image.asset(
-                          'assets/Group87935.png',
+                        child: Image.network(
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
@@ -1707,13 +1707,13 @@ Widget _buildInfoRow(String iconPath, String text) {
         ],
       ),
       const SizedBox(width: 8),
-      Image.asset(iconPath, width: 24, height: 24),
+      Image.network(iconPath, width: 24, height: 24),
     ],
   );
 }
 
 Widget _icon(String path) {
-  return Image.asset(path, width: 24, height: 24);
+  return Image.network(path, width: 24, height: 24);
 }
  Widget menuButton(BuildContext context, String label, Color bgColor, Color textColor) {
     return SizedBox(
@@ -1773,7 +1773,7 @@ Widget _storeButton(String iconPath, String label) {
     ),
     child: Row(
       children: [
-        Image.asset(iconPath, width: 40, height: 40),
+        Image.network(iconPath, width: 40, height: 40),
         const SizedBox(width: 8),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,

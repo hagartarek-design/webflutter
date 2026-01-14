@@ -21,21 +21,30 @@ class Homeafterlogin extends StatefulWidget {
 
 class _HomeafterloginState extends State<Homeafterlogin> {
  final List<String> images = [
-  'assets/use1.png',
-  'assets/use2.png',
-  'assets/use3.png',
-  'assets/use5.png',
-  'assets/use4.png',
-  'assets/use7.png',
-  'assets/use2.png',
-  'assets/use3.png',
-  'assets/use1.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use1.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use2.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use3.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use4.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use2.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use3.png',
+  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use1.png',
 ];
 
   final List<List<String>> imageGroups = [
-    ['assets/use1.png', 'assets/use2.png', 'assets/use3.png', 'assets/use5.png'],
-    ['assets/use4.png', 'assets/use5.png', 'assets/use2.png', 'assets/use5.png'],
-    ['assets/use7.png', 'assets/use1.png', 'assets/use2.png', 'assets/use5.png'],
+    ['https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use1.png',
+     'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use2.png', 
+     'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use3.png', 
+     'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png'],
+    ['https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use4.png',
+     'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png',
+      'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use2.png',
+       'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png'],
+    ['https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',
+     'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use1.png',
+      'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use2.png',
+       'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png'],
   ];
 
 
@@ -87,7 +96,8 @@ initialPage: 1
 ,
               Row(
                 children: [
-              Image.asset('assets/Group87935.png', width: 55),
+              Image.network(
+'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -117,8 +127,9 @@ initialPage: 1
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector_3.png',width: 40,height: 41,),
-                    Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)
+                    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_3.png'
+                    ,width: 40,height: 41,),
+                    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_2.png',width: 39.02,height: 40,)
              
                   ],
                 ),
@@ -133,7 +144,7 @@ initialPage: 1
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group87935.png', width: 55),
+                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -163,8 +174,8 @@ initialPage: 1
                 ],
               ),
             ),
-            Image.asset(
-              'assets/teacherscover.png',
+            Image.network(
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -182,12 +193,12 @@ initialPage: 1
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-              InkWell(child: _buildClassCard('احجز ملازمك', 'assets/1stsec2x.png',context) ,onTap: (){
+              InkWell(child: _buildClassCard('احجز ملازمك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context) ,onTap: (){
 
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>subjectBooks2()));
               },) ,
-                _buildClassCard('المحضرات المباشرة', 'assets/2ndsec.png',context),
-            InkWell(child:  _buildClassCard('شوف محضراتك', 'assets/use7.png',context) ,onTap: (){
+                _buildClassCard('المحضرات المباشرة', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context),
+            InkWell(child:  _buildClassCard('شوف محضراتك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',context) ,onTap: (){
               Navigator.push(context, MaterialPageRoute(builder:( context){
 return Subjectbooks();
               }));
@@ -201,7 +212,8 @@ return Subjectbooks();
               alignment: WrapAlignment.end,
               children: [
           InkWell(child: 
-            _buildClassCard('احجز امنحنات الشامل', 'assets/1stsec2x.png',context),
+            _buildClassCard('احجز امنحنات الشامل', 
+            'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context),
           onTap: (){
             Navigator.push(context, MaterialPageRoute(builder: (context){
               return SchudleForTheExam();
@@ -231,14 +243,14 @@ ExamresultAnswerSheet()
 
 ;
 }));
-           },child: _buildClassCard('احجز السنتر', 'assets/2ndsec.png',context), )    
+           },child: _buildClassCard('احجز السنتر', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context), )    
               ],
             ),  const SizedBox(height: 20),
             
             // const SizedBox(height: 20),
 
-        Image.asset(
-              'assets/thumb4.png',
+        Image.network(
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/thumb4.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -263,7 +275,7 @@ ExamresultAnswerSheet()
         // padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-            Image.asset(
+            Image.network(
               images[index],
               width:isMobile?1000:screenWidth,
               height: 180,
@@ -287,6 +299,7 @@ ExamresultAnswerSheet()
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children:[
+              
               Icon(Icons.arrow_back_ios_new_outlined,color: Color.fromARGB(255, 6, 69, 152),),
               ... List.generate(
               
@@ -301,7 +314,7 @@ ExamresultAnswerSheet()
                   );
                 },
                 child: Container(
-                  margin: const EdgeInsets.all(6.0),
+                  margin: const EdgeInsets.all(13.0),
                   width: _currentPage == index ? 100 : 100,
                   height: _currentPage == index ? 12 : 8,
                   decoration: BoxDecoration(
@@ -321,7 +334,7 @@ ExamresultAnswerSheet()
             ]
           ),
           
-          SizedBox(height: 20),
+          SizedBox(height: 20,width: 10,),
         ],
       ),
             _buildFooter(context),
@@ -410,7 +423,7 @@ ExamresultAnswerSheet()
           Container(
             height: 180,width:screenWidth,
             padding: const EdgeInsets.all(8),
-            child: Image.asset(imagePath, fit: BoxFit.contain),
+            child: Image.network(imagePath, fit: BoxFit.contain),
           ),
          
         ],
@@ -437,7 +450,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.asset('assets/Frame_10.png', width: 43, height: 40),
+          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const 
           AutoTranslateText(text:'الأستاذ شريف البدري',fontSize: 32,
@@ -501,23 +514,23 @@ Widget _buildFooter(BuildContext context) {
                       ),
                       const SizedBox(height: 16),
                       
-                      // _buildInfoRow('icons/location.png',
-                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/location.png',
+                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms_1.png', 'support@ashtar.app'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/sms_1.png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame_14.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_14.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_13.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_13.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_12.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_12.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_11.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_11.png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -532,9 +545,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame_16.png', 'Google play'),
+                          _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_16.png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame_15.png', 'App Store'),
+                          _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_15.png', 'App Store'),
                         ],
                       )
                     ],
@@ -564,8 +577,8 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 24),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Image.asset(
-                          'assets/Group87935.png',
+                        child: Image.network(
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
@@ -616,13 +629,13 @@ Widget _buildInfoRow(String iconPath, String text) {
         ],
       ),
       const SizedBox(width: 8),
-      Image.asset(iconPath, width: 24, height: 24),
+      Image.network(iconPath, width: 24, height: 24),
     ],
   );
 }
 
 Widget _icon(String path) {
-  return Image.asset(path, width: 24, height: 24);
+  return Image.network(path, width: 24, height: 24);
 }
  Widget menuButton(BuildContext context, String label, Color bgColor, Color textColor) {
     return SizedBox(
@@ -681,7 +694,7 @@ Widget _storeButton(String iconPath, String label) {
     ),
     child: Row(
       children: [
-        Image.asset(iconPath, width: 40, height: 40),
+        Image.network(iconPath, width: 40, height: 40),
         const SizedBox(width: 8),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,

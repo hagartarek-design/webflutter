@@ -63,7 +63,7 @@ final ScrollController scrollController = ScrollController();
   )..initialize().then((_) {
       controllervideo!.play();
     });
-}
+} 
  VideoPlayerController ?controllervideo2;
   initializePlayer2(String id)async {
   //  final token=await getToken();

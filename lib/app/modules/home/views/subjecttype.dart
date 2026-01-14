@@ -68,7 +68,7 @@ int _currentPage=0;
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group87935.png', width: 55),
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -83,7 +83,7 @@ int _currentPage=0;
 //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
 //             children: [
 //               // Logo
-//               Image.asset(
+//               Image.network(
 //                 'assets/logo.png',
 //                 height: 40,
 //               ),
@@ -136,8 +136,8 @@ int _currentPage=0;
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector_3.png',width: 40,height: 41,),
-                    Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)
+                    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_3.png',width: 40,height: 41,),
+                    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_2.png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -154,7 +154,7 @@ int _currentPage=0;
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group87935.png', width: 55),
+                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -222,7 +222,7 @@ int _currentPage=0;
             AutoTranslateText(text:'اختار مادتك',weight: FontWeight.w600,
            fontSize: 32,color: Color.fromARGB(255, 6, 69, 152))
            ,SizedBox(width: 1120,child:Row(spacing: 16, children: [
-            // Image.asset('assets/')
+            // Image.network('assets/')
            ],) ,)
            
            ],)),
@@ -246,13 +246,13 @@ Wrap(
 //     future: controller.checkEnrollment(controller.courses[courseIndex].id!),
 //     builder: (context, snapshot) {
 //       if (snapshot.connectionState == ConnectionState.waiting) {
-//         return Image.asset('assets/loading.png');
+//         return Image.network('assets/loading.png');
 //       }
 //       if (snapshot.hasError) {
-//         return Image.asset('assets/error.png');
+//         return Image.network('assets/error.png');
 //       }
 //       bool enrolled = snapshot.data ?? false;
-//       return Image.asset(
+//       return Image.network(
 //         enrolled
 //             ? 'assets/Frame1597882438(7).png'
 //             : 'assets/Frame1597882438(6).png',
@@ -318,15 +318,15 @@ controller.addcoursetocart(id:controller.courses[courseIndex].id!);
   context,
   imageWidget: 
     // snapshot.connectionState == ConnectionState.waiting?
-    //      Image.asset('assets/loading.png'):
+    //      Image.network('assets/loading.png'):
      
     //   snapshot.hasError?
-    //    Image.asset('assets/error.png'):
+    //    Image.network('assets/error.png'):
       
-       Image.asset(
+       Image.network(
         enrolled==false
-            ? 'assets/Frame1597882438_7.png'
-            : 'assets/Frame1597882438_6.png',
+            ? 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame1597882438_7.png'
+            : 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame1597882438_6.png',
         fit: BoxFit.cover,
       )
   
@@ -430,7 +430,7 @@ controller.addcoursetocart(id:controller.courses[courseIndex].id!);
               height: 180,
               width: screenWidth,
               padding: const EdgeInsets.all(8),
-              child: imageWidget, // ✅ now directly uses widget
+              child: imageWidget, 
             ),
           ],
         ),
@@ -478,7 +478,7 @@ controller.addcoursetocart(id:controller.courses[courseIndex].id!);
   //         Container(
   //           height: 150,
   //           padding: const EdgeInsets.all(8),
-  //           child: Image.asset(imagePath, fit: BoxFit.contain),
+  //           child: Image.network(imagePath, fit: BoxFit.contain),
   //         ),
   //         Padding(
   //           padding: const EdgeInsets.all(8.0),
@@ -570,23 +570,23 @@ Widget _buildFooter(BuildContext context) {
                         ),
                       ),
                       const SizedBox(height: 16),
-                      // _buildInfoRow('icons/location.png',
-                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/location.png',
+                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
-                      _buildInfoRow('icons/sms _1)png', 'support@ashtar.app'),
+                      _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/sms_1.png', 'support@ashtar.app'),
                       const SizedBox(height: 12),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame_14.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_14.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_13.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_13.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_12.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_12.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_11.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_11.png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -601,9 +601,9 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 12),
                       Row(
                 mainAxisAlignment: MainAxisAlignment.end,        children: [
-                          _storeButton('icons/Frame_16.png', 'Google play'),
+                          _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_16.png', 'Google play'),
                           const SizedBox(width: 12),
-                          _storeButton('icons/Frame_15.png', 'App Store'),
+                          _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_15.png', 'App Store'),
                         ],
                       )
                     ],
@@ -633,8 +633,8 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 24),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Image.asset(
-                          'assets/Group87935.png',
+                        child: Image.network(
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
@@ -685,13 +685,13 @@ Widget _buildInfoRow(String iconPath, String text) {
         ],
       ),
       const SizedBox(width: 8),
-      Image.asset(iconPath, width: 24, height: 24),
+      Image.network(iconPath, width: 24, height: 24),
     ],
   );
 }
 
 Widget _icon(String path) {
-  return Image.asset(path, width: 24, height: 24);
+  return Image.network(path, width: 24, height: 24);
 }
  Widget menuButton(BuildContext context, String label, Color bgColor, Color textColor) {
     return SizedBox(
@@ -751,7 +751,7 @@ Widget _storeButton(String iconPath, String label) {
     ),
     child: Row(
       children: [
-        Image.asset(iconPath, width: 40, height: 40),
+        Image.network(iconPath, width: 40, height: 40),
         const SizedBox(width: 8),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
