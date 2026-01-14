@@ -92,29 +92,29 @@ class HomeView extends GetView<HomeController> {
         title: Center(
           child: Container(
             width: screenWidth * 0.95,
-            child: Wrap(
-              runAlignment: WrapAlignment.spaceBetween,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Wrap(
+                Row(
                   children: [
                    _buildButton('تسجيل دخول',context, isTablet,isPrimary: true)
                     
-                    , SizedBox(width:isTablet?3: 12),
+                    , SizedBox(width: 12),
                 _buildButton('انشاء حساب',isTablet,context),  
                   ],
                 ),
                 if (!isMobile) 
-                  Wrap(
+                  Row(
                     children: [
-                      _navText('الرئيسية', highlight: true,isMobile),
-                      _navText('ذاكر',isMobile),
-                      _navText('مدرسينا',isMobile),
-                      _navText('كورساتى',isMobile),
-                      _navText('مصادري',isMobile),
-                      _navText('عن أشطر',isMobile),
-                      _navText('تواصل معنا',isMobile),
+                      _navText('الرئيسية', highlight: true,),
+                      _navText('ذاكر',),
+                      _navText('مدرسينا',),
+                      _navText('كورساتى',),
+                      _navText('مصادري',),
+                      _navText('عن أشطر',),
+                      _navText('تواصل معنا',),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group87935.png', width: 55),
+                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -158,8 +158,8 @@ class HomeView extends GetView<HomeController> {
               alignment: WrapAlignment.center,
               children: [
                 _buildClassCard2('الصف الأول الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context,isMobile),
-                _buildClassCard2('الصف الثاني الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context,isMobile),
-                _buildClassCard('الصف الثالث الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context,isMobile),
+                _buildClassCard2('الصف الثاني الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context,isMobile),
+                _buildClassCard2('الصف الثالث الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/3rdsec2.png',context,isMobile),
               ],
             ), 
             const SizedBox(height: 20),
@@ -249,12 +249,12 @@ class HomeView extends GetView<HomeController> {
     );
   }
 
-  Widget _navText(String text, isMobile ,{bool highlight = false}) {
+  Widget _navText(String text,{bool highlight = false}) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8),
       child:
       //  Text('data')
-        AutoTranslateText(weight: FontWeight.w400 , fontSize:isMobile?10: 18,text: text,highlight: highlight,color:  const Color.fromARGB(255, 181, 181, 181),)   //   style: TextStyle(
+        AutoTranslateText(weight: FontWeight.w400 , fontSize: 18,text: text,highlight: highlight,color:  const Color.fromARGB(255, 181, 181, 181),)   //   style: TextStyle(
       //     fontSize: 18,
       //     fontWeight: FontWeight.w400,
       //     color: highlight
