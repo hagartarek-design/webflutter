@@ -404,8 +404,8 @@ Widget _buildFooter(BuildContext context) {
                       ),
                       const SizedBox(height: 16),
                       
-                      // _buildInfoRow('icons/location.png',
-                      //     '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
+                      _buildInfoRow('icons/location.png',
+                          '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
                       const SizedBox(height: 12),
                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
                       const SizedBox(height: 12),
@@ -467,8 +467,8 @@ Widget _buildFooter(BuildContext context) {
                       const SizedBox(height: 24),
                       Align(
                         alignment: Alignment.centerRight,
-                        child: Image.asset(
-                          'assets/Group87935.png',
+                        child: Image.network(
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
@@ -519,7 +519,7 @@ Widget _buildInfoRow(String iconPath, String text) {
         ],
       ),
       const SizedBox(width: 8),
-      Image.asset(iconPath, width: 24, height: 24),
+      Image.network(iconPath, width: 24, height: 24),
     ],
   );
 }
