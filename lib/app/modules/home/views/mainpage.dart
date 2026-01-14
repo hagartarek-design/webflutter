@@ -519,7 +519,7 @@ Widget _buildInfoRow(String iconPath, String text) {
         ],
       ),
       const SizedBox(width: 8),
-      Image.network(iconPath, width: 24, height: 24),
+      Image.asset(iconPath, width: 24, height: 24),
     ],
   );
 }
