@@ -58,17 +58,17 @@ final ScrollController scrollController = ScrollController();
 
    
   controllervideo = VideoPlayerController.network(
-    'http://localhost:3000/courses/play/${id}',
+    'http://localhost:5000/courses/play/${id}',
     
   )..initialize().then((_) {
       controllervideo!.play();
     });
-} 
+}
  VideoPlayerController ?controllervideo2;
   initializePlayer2(String id)async {
   //  final token=await getToken();
    controllervideo2 = VideoPlayerController.network(
-  'http://localhost:3000/courses/playy/${id}',
+  'http://localhost:5000/courses/playy/${id}',
   // httpHeaders:{  'Authorization': 'Bearer $token',}   ,
   )..initialize().then((_) {
       controllervideo2!.play();
@@ -77,7 +77,7 @@ final ScrollController scrollController = ScrollController();
 
 Map<String, dynamic>? profileData;
 
-  final String baseUrl = "http://localhost:3000";
+  final String baseUrl = "http://localhost:5000";
 
   Future<Map<String, dynamic>> getProfile(String token) async {
     final response = await http.get(
@@ -96,7 +96,7 @@ Map<String, dynamic>? profileData;
   }
   Map<String, dynamic>? profile;
 
-  // final String baseUrl = "http://localhost:3000"; 
+  // final String baseUrl = "http://localhost:5000"; 
 
   Future<Map<String, dynamic>> getmycourses(String token) async {
     final response = await http.get(
@@ -162,13 +162,13 @@ Future<void> signInWithFacebook() async {
 
 
     UserCredential userCredential = await FirebaseAuth.instance
-        .signInWithCredential(facebookAuthCredential);
+        .signInWithCredential(facebookAuthCredential);  
 
     // print("User: ${userCredential.user}");
   } else {
     // print("Facebook login failed: ${result.message}");
   }
-}
+} 
   final ValueNotifier<double> scrollPosition = ValueNotifier<double>(0.0);
 // ScrollController scrollController=ScrollController();
  @override
@@ -189,7 +189,7 @@ Future<void> signInWithFacebook() async {
 Student student=Student();
   Future<void> fetchstudent() async {
   try {
-    final Uri uri = Uri.http('localhost:3000', '/student-course');
+    final Uri uri = Uri.http('localhost:5000', '/student-course');
 
     final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
@@ -242,7 +242,7 @@ fetchSAllCourses();usedattachments();
     super.onInit();fetchProfile();
     attachments();fetchmycourses();
        on(int lessonId,int currentIndex){ final imageUrl =
-        'http://localhost:3000/pdf/lesson/${lessonId}/image/$currentIndex'; 
+        'http://localhost:5000/pdf/lesson/${lessonId}/image/$currentIndex'; 
    }
   
     // fetchcourseinfo();
@@ -323,7 +323,7 @@ fetch();
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/userquestion?id=$questionId'),
+        Uri.parse('http://localhost:5000/userquestion?id=$questionId'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -361,7 +361,7 @@ fetch();
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/userquestion/exams/e?id=$questionId'),
+        Uri.parse('http://localhost:5000/userquestion/exams/e?id=$questionId'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -397,7 +397,7 @@ fetch();
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/code/buy/buySheet'),
+        Uri.parse('http://localhost:5000/code/buy/buySheet'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -435,7 +435,7 @@ fetch();
   //      final prefs = await SharedPreferences.getInstance();
   //   final token = prefs.getString('token');
   //     final response = await http.patch(
-  //       Uri.parse('http://localhost:3000/userquestion/exams/e?id=$questionId'),
+  //       Uri.parse('http://localhost:5000/userquestion/exams/e?id=$questionId'),
   //       headers: {
   //         'Content-Type': 'application/json',
   //         'Authorization': 'Bearer $token',
@@ -471,7 +471,7 @@ fetch();
   //      final prefs = await SharedPreferences.getInstance();
   //   final token = prefs.getString('token');
   //     final response = await http.patch(
-  //       Uri.parse('http://localhost:3000/userquestion?id=$questionId'),
+  //       Uri.parse('http://localhost:5000/userquestion?id=$questionId'),
   //       headers: {
   //         'Content-Type': 'application/json',
   //         'Authorization': 'Bearer $token',
@@ -502,7 +502,7 @@ fetch();
   try {
      final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
-    final response =await http.get(Uri.parse('http://localhost:3000/attachments'
+    final response =await http.get(Uri.parse('http://localhost:5000/attachments'
     )
     , headers: {
           'Content-Type': 'application/json',
@@ -518,7 +518,7 @@ fetch();
  }
 
 Future purchaseCourse({required int courseId})async{
-  final url='http://localhost:3000/cart/complete-course-purchase';
+  final url='http://localhost:5000/cart/complete-course-purchase';
 final  prefs=await SharedPreferences.getInstance();
 final token=prefs.getString('token');
 final response=await http.post(Uri.parse(url),body:{'courseId':courseId} ,
@@ -541,7 +541,7 @@ else{print(response.statusCode);}
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/courses/pay-with-code/charge?courseId=$courseId'),
+        Uri.parse('http://localhost:5000/courses/pay-with-code/charge?courseId=$courseId'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -573,7 +573,7 @@ else{print(response.statusCode);}
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/courses/update/charge'),
+        Uri.parse('http://localhost:5000/courses/update/charge'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -609,7 +609,7 @@ else{print(response.statusCode);}
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/sections/pay-with-code/charge?sectionId=$sectionId'),
+        Uri.parse('http://localhost:5000/sections/pay-with-code/charge?sectionId=$sectionId'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -647,7 +647,7 @@ else{print(response.statusCode);}
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/code/recharge'),
+        Uri.parse('http://localhost:5000/code/recharge'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -704,7 +704,7 @@ Future<void> addattachtocart({required  int id})async{
 try{
   final prefs=await SharedPreferences.getInstance();
 final token=prefs.getString('token');
-final response=await http.post(Uri.parse('http://localhost:3000/attachments/addtocart/$id')
+final response=await http.post(Uri.parse('http://localhost:5000/attachments/addtocart/$id')
 ,headers:{    'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',} 
 );
@@ -722,7 +722,7 @@ Future<void> addsectiontocart({required  int id})async{
 try{
   final prefs=await SharedPreferences.getInstance();
 final token=prefs.getString('token');
-final response=await http.post(Uri.parse('http://localhost:3000/sections/addtocart/$id')
+final response=await http.post(Uri.parse('http://localhost:5000/sections/addtocart/$id')
 ,headers:{    'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',} 
 );
@@ -741,7 +741,7 @@ Future<void> addcoursetocart( {required  int id})async{
 try{
   final prefs=await SharedPreferences.getInstance();
 final token=prefs.getString('token');
-final response=await http.post(Uri.parse('http://localhost:3000/courses/addtocart/$id')
+final response=await http.post(Uri.parse('http://localhost:5000/courses/addtocart/$id')
 ,headers:{    'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',} 
 );
@@ -763,7 +763,7 @@ print(response);
        final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
       final response = await http.patch(
-        Uri.parse('http://localhost:3000/code/buy/clearcart'),
+        Uri.parse('http://localhost:5000/code/buy/clearcart'),
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $token',
@@ -794,7 +794,7 @@ Future  deletefromcart( String id) async{
     // var body=json.encode({'name':name,"description":description});
 
 
-var url ='http://localhost:3000/cart/$id';
+var url ='http://localhost:5000/cart/$id';
 final response=await http .delete(Uri.parse(url),
 headers: {
         "Content-Type": "application/json",
@@ -829,7 +829,7 @@ else{print('hhhhhhhhh');
   final prefs = await SharedPreferences.getInstance();
   final token = prefs.getString('token');
   final response = await http.post(
-    Uri.parse('http://localhost:3000/studentquestions?name=$name'),
+    Uri.parse('http://localhost:5000/studentquestions?name=$name'),
     headers: {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer $token',
@@ -885,7 +885,7 @@ final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
  Future<bool> login(context) async {
     final response = await http.post(
-      Uri.parse('http://localhost:3000/auth/login/student'),
+      Uri.parse('http://localhost:5000/auth/login/student'),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode({"email": emailController.text, "password": passwordController.text}),
     );
@@ -923,7 +923,7 @@ final TextEditingController emailController = TextEditingController();
 
 
 Future<void>uploadVideo(File videoFile)async{
-  var request=http.MultipartRequest('POST',Uri.parse('http://localhost:3000/videos/upload'));
+  var request=http.MultipartRequest('POST',Uri.parse('http://localhost:5000/videos/upload'));
   request.files.add(await http.MultipartFile.fromPath('file', videoFile.path,));
  var response=await request.send();
  if(response.statusCode==201||response.statusCode==200){
@@ -971,7 +971,7 @@ Future fetchUserQuestion({int? id, int? page,  }) async {
     if (page != null) queryParameters['page'] = page.toString();
     if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/userquestion/questions')
+    final uri = Uri.parse('http://localhost:5000/userquestion/questions')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1012,7 +1012,7 @@ Future fetchCart() async {
     final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');
 
-    final uri = Uri.parse('http://localhost:3000/cart');
+    final uri = Uri.parse('http://localhost:5000/cart');
         // .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1057,7 +1057,7 @@ Future usedattachments() async {
     // if (page != null) queryParameters['page'] = page.toString();
     // if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/attachments/allusedattach');
+    final uri = Uri.parse('http://localhost:5000/attachments/allusedattach');
         // .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1102,7 +1102,7 @@ Future unusedattachments() async {
     // if (page != null) queryParameters['page'] = page.toString();
     // if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/attachments/allunusedattach');
+    final uri = Uri.parse('http://localhost:5000/attachments/allunusedattach');
         // .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1147,7 +1147,7 @@ Future fetchUserQuestionExam({int? id, int? page,  }) async {
     if (page != null) queryParameters['page'] = page.toString();
     if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/userquestion/questions/questionsexams')
+    final uri = Uri.parse('http://localhost:5000/userquestion/questions/questionsexams')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1190,7 +1190,7 @@ Future fetchUserQuestionExam2({int? id, int? page,  }) async {
     if (page != null) queryParameters['page'] = page.toString();
     if (limit2 != null) queryParameters['limit'] = limit2.toString();
 
-    final uri = Uri.parse('http://localhost:3000/userquestion/questions/questionsexams')
+    final uri = Uri.parse('http://localhost:5000/userquestion/questions/questionsexams')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1230,7 +1230,7 @@ Future fetchUserQuestionExam2({int? id, int? page,  }) async {
 //     if (page != null) queryParameters['page'] = page.toString();
 //     if (limit != null) queryParameters['limit'] = limit.toString();
 
-//     final uri = Uri.parse('http://localhost:3000/userquestion/questions/questionsexams')
+//     final uri = Uri.parse('http://localhost:5000/userquestion/questions/questionsexams')
 //         .replace(queryParameters: queryParameters);
 
 //     final response = await http.get(
@@ -1302,7 +1302,7 @@ Future <void> addanswer(BuildContext  context) async{
      ,"center":center.value,
     //  "":timeofsession.value
       });
-var url ='http://localhost:3000/students/schedualCenter/p';
+var url ='http://localhost:5000/students/schedualCenter/p';
 final response=await http .patch(Uri.parse(url),body:body
 ,headers: {
         "Content-Type": "application/json",
@@ -1339,7 +1339,7 @@ Future fetchExams({int? online, int? page,  }) async {
     if (page != null) queryParameters['page'] = page.toString();
     if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/exams/online/offline')
+    final uri = Uri.parse('http://localhost:5000/exams/online/offline')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1378,7 +1378,7 @@ Future fetchExams2({int? online,   }) async {
     // if (page != null) queryParameters['page'] = page.toString();
     // if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/exams/online/offline')
+    final uri = Uri.parse('http://localhost:5000/exams/online/offline')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1416,7 +1416,7 @@ Future fetchCodes({int? online, int? page,  }) async {
     if (page != null) queryParameters['page'] = page.toString();
     if (limit != null) queryParameters['limit'] = limit.toString();
 
-    final uri = Uri.parse('http://localhost:3000/code/withpag')
+    final uri = Uri.parse('http://localhost:5000/code/withpag')
         .replace(queryParameters: queryParameters);
 
     final response = await http.get(
@@ -1447,7 +1447,7 @@ List<student_Course> studentcourse=[];
 Future<void> fetchQuestions( ) async {
  try{ 
   final Uri uri = Uri.http(
-    'localhost:3000', '/student-course',
+    'localhost:5000', '/student-course',
   );
     
        final prefs = await SharedPreferences.getInstance();
@@ -1480,7 +1480,7 @@ List<Section>  sections=[];
 Future<void> fetchSections( ) async {
  try{ 
   final Uri uri = Uri.http(
-    'localhost:3000', '/sections/mysections',
+    'localhost:5000', '/sections/mysections',
     // {
     //   if (page != null)  'page': page.toString(),
     //   if (limit != null) 'limit': limit.toString(),
@@ -1526,7 +1526,7 @@ List<Course>  allcourse=[];
 Future<void> fetchSAllCourses( ) async {
  try{ 
   final Uri uri = Uri.http(
-    'localhost:3000', '/courses/getallcourses',
+    'localhost:5000', '/courses/getallcourses',
     // {
     //   if (page != null)  'page': page.toString(),
     //   if (limit != null) 'limit': limit.toString(),
@@ -1576,7 +1576,7 @@ List<Course> bycourses=[];
 Future<void> fetch( ) async {
  try{ 
   final Uri uri = Uri.http(
-    'localhost:3000', '/student-course/course',
+    'localhost:5000', '/student-course/course',
     // {
     //   if (page != null)  'page': page.toString(),
     //   if (limit != null) 'limit': limit.toString(),
@@ -1621,7 +1621,7 @@ Future<void> fetch( ) async {
 // Future<void> fetchbyinfoid( String id) async {
 //  try{ 
 //   final Uri uri = Uri.http(
-//     'localhost:3000', '/student-course/courseInfoid/$id',
+//     'localhost:5000', '/student-course/courseInfoid/$id',
     
 //     // {
 //     //   if (page != null)  'page': page.toString(),
@@ -1674,7 +1674,7 @@ Future<void> fetchcourseinfo(String id) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/student-course/courseInfo',
       queryParams,
     );
@@ -1719,7 +1719,7 @@ Future<void> attachments({String? status}) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/attachments',
       queryParams,
     );
@@ -1757,7 +1757,7 @@ Future<bool> checkEnrollment(int courseId) async {
 
     final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');  final response = await http.get(
-    Uri.parse('http://localhost:3000/student-course/isEnrolled/$courseId'), headers: {
+    Uri.parse('http://localhost:5000/student-course/isEnrolled/$courseId'), headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
       },
@@ -1787,7 +1787,7 @@ Future<bool> usedEnrollmentsection(String sectionId) async {
 
     final prefs = await SharedPreferences.getInstance();
     final token = prefs.getString('token');  final response = await http.get(
-    Uri.parse('http://localhost:3000/sections/isEnrolled/$sectionId'), headers: {
+    Uri.parse('http://localhost:5000/sections/isEnrolled/$sectionId'), headers: {
         'Authorization': 'Bearer $token',
         'Content-Type': 'application/json',
       },
@@ -1813,7 +1813,7 @@ Future<void> fetchcourseinfoid(String id) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/student-course/courseInfoid',
       queryParams,
     );
@@ -1856,7 +1856,7 @@ Future<void> fetchsectionid(String id) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/courses/sectionbyid',
       queryParams,
     );
@@ -1896,7 +1896,7 @@ Future<void> fetchmaterial() async {
     // final queryParams = <String, String>{};
    
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/materials',
     
     );
@@ -1941,7 +1941,7 @@ Future<void> fetchsectionidlesson(String id) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/courses/sectionbyid',
       queryParams,
     );
@@ -1984,7 +1984,7 @@ Future<void> sectionidlessontype(String title) async {
     }
 
     final Uri uri = Uri.http(
-      'localhost:3000',
+      'localhost:5000',
       '/lesson/typelesson',
       queryParams,
     );
@@ -2051,7 +2051,7 @@ Future<void> sectionidlessontype(String title) async {
     print("✅ ID Token: $idToken");
 
     final response = await http.post(
-      Uri.parse('http://localhost:3000/auth/google-login/students'), 
+      Uri.parse('http://localhost:5000/auth/google-login/students'), 
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'idToken': idToken}),
     );

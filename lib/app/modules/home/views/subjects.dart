@@ -48,7 +48,7 @@ class Subjects extends StatelessWidget {
               // onTap: () => _showMenuDialog(context),
               child: const Icon(Icons.menu, color: Colors.white),
             ),
-            Image.asset('assets/Group87935.png', width: 55),
+            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
           ],
         ),
       );
@@ -69,8 +69,8 @@ class Subjects extends StatelessWidget {
                       height: 40,
                       child: const CircleAvatar(radius: 24),
                     ),
-                    Image.asset('icons/Vector_3.png', width: 40, height: 41),
-                    Image.asset('icons/Vector_2.png', width: 39.02, height: 40)
+                    Image.network('icons/Vector_3.png', width: 40, height: 41),
+                    Image.network('icons/Vector_2.png', width: 39.02, height: 40)
                   ],
                 ),
                 Row(
@@ -83,7 +83,7 @@ class Subjects extends StatelessWidget {
                     _navText('ذاكر'),
                     _navText('الرئيسية', highlight: true),
                     const SizedBox(width: 12),
-                    Image.asset('assets/Group87935.png', width: 55),
+                    Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                   ],
                 ),
               ],
@@ -183,8 +183,8 @@ class Subjects extends StatelessWidget {
     return InkWell(
       onTap: () => Navigator.push(context, 
           MaterialPageRoute(builder: (context) => Subjecttype())),
-      child: Image.asset(
-        'assets/thumb4.png',
+      child: Image.network(
+        'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/thumb4.png',
         width: screenWidth,
         fit: BoxFit.fitWidth,
       ),
@@ -272,7 +272,7 @@ class Subjects extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(16),
-              child: Image.asset('assets/lecturecard.png', width: 268, height: 396),
+              child: Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/lecturecard.png', width: 268, height: 396),
             ),
             Positioned.fill(
               child: Container(
@@ -560,7 +560,7 @@ controller.addsectiontocart(id: ids!);
           const Align(
             alignment: Alignment.centerRight,
             child: Image(
-              image: AssetImage('assets/Group87935.png'),
+              image: AssetImage('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png'),
               width: 80,
               height: 65.7,
             ),
@@ -602,7 +602,7 @@ controller.addsectiontocart(id: ids!);
           textAlign: TextAlign.right,
         ),
         const SizedBox(width: 8),
-        Image.asset(iconPath, width: 24, height: 24),
+        Image.network(iconPath, width: 24, height: 24),
       ],
     );
   }
@@ -653,7 +653,7 @@ controller.addsectiontocart(id: ids!);
   }
 
   Widget _icon(String path) {
-    return Image.asset(path, width: 24, height: 24);
+    return Image.network(path, width: 24, height: 24);
   }
 
   Widget _storeButton(String iconPath, String label) {
@@ -667,7 +667,7 @@ controller.addsectiontocart(id: ids!);
       ),
       child: Row(
         children: [
-          Image.asset(iconPath, width: 40, height: 40),
+          Image.network(iconPath, width: 40, height: 40),
           const SizedBox(width: 8),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,

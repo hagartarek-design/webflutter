@@ -69,7 +69,7 @@
 //               // Buttons
 //               Row(
 //                 children: [
-//               Image.asset('assets/Group 87935.png', width: 55),
+//               Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group 87935.png', width: 55),
 //                 ],
 //               ),
 //             ],
@@ -84,8 +84,8 @@
 // //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
 // //             children: [
 // //               // Logo
-// //               Image.asset(
-// //                 'assets/logo.png',
+// //               Image.network(
+// //                 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo.png',
 // //                 height: 40,
 // //               ),
 
@@ -137,8 +137,8 @@
 //                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
 //                         ),
 //                       ),
-//                     Image.asset('icons/Vector (3).png',width: 40,height: 41,),
-//                     Image.asset('icons/Vector (2).png',width: 39.02,height: 40,)
+//                     Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector (3).png',width: 40,height: 41,),
+//                     Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector (2).png',width: 39.02,height: 40,)
 //                     // _buildButton('تسجيل دخول', isPrimary: true),
 //                     // const SizedBox(width: 12),
 //                     // _buildButton('انشاء حساب'),
@@ -155,7 +155,7 @@
 //                       _navText('ذاكر'),
 //                       _navText('الرئيسية', highlight: true),
 //                       const SizedBox(width: 12),
-//                       Image.asset('assets/Group 87935.png', width: 55),
+//                       Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group 87935.png', width: 55),
 //                     ],
 //                   ),
 //               ],
@@ -256,7 +256,7 @@
 //             ),child: Wrap(children: [Text('امتحنات اونلاين',
 //             style: TextStyle(fontWeight: FontWeight.w500,fontSize: 20
 //            , color: Color.fromARGB(255, 255, 255, 255)
-//             ),),Image.asset('assets/Frame.png',height: 30,width: 30,)
+//             ),),Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame.png',height: 30,width: 30,)
             
 //             ],),),
 //         onTap: (){
@@ -279,7 +279,7 @@
 //    Color.fromARGB(255, 235, 239, 249):Color.fromARGB(255, 6, 69, 152),
 // fontSize: 20,fontWeight: FontWeight.w500
 
-// ),),Image.asset('assets/Group (1).png',width: 30,height: 30,)
+// ),),Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group (1).png',width: 30,height: 30,)
           
 //          ],),
 //          decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)
@@ -494,7 +494,7 @@
 //                                           mainAxisAlignment:
 //                                               MainAxisAlignment.center,
 //                                           children: [
-//                                             Image.asset('assets/arrowleft.png',
+//                                             Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/arrowleft.png',
 //                                                 width: 9.53, height: 20),
 //                                             const SizedBox(width: 12),
 //                                             const Text(
@@ -637,7 +637,7 @@
 //           Container(
 //             height: 180,width:screenWidth,
 //             padding: const EdgeInsets.all(8),
-//             child: Image.asset(imagePath, fit: BoxFit.contain),
+//             child: Image.network(imagePath, fit: BoxFit.contain),
 //           ),
          
 //         ],
@@ -686,7 +686,7 @@
 //   //         Container(
 //   //           height: 150,
 //   //           padding: const EdgeInsets.all(8),
-//   //           child: Image.asset(imagePath, fit: BoxFit.contain),
+//   //           child: Image.network(imagePath, fit: BoxFit.contain),
 //   //         ),
 //   //         Padding(
 //   //           padding: const EdgeInsets.all(8.0),
@@ -710,7 +710,7 @@
 //       child: Column(
 //         crossAxisAlignment: CrossAxisAlignment.start,
 //         children: [
-//           Image.asset('assets/Frame (10).png', width: 43, height: 40),
+//           Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame (10).png', width: 43, height: 40),
 //           const SizedBox(height: 8),
 //           const Text(
 //             'الأستاذ شريف البدري',
@@ -778,23 +778,23 @@
 //                         ),
 //                       ),
 //                       const SizedBox(height: 16),
-//                       _buildInfoRow('icons/location.png',
+//                       _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/location.png',
 //                           '26 Street 261, عزبة فهمي، قسم المعادي، محافظة القاهرة‬'),
 //                       const SizedBox(height: 12),
-//                       _buildInfoRow('icons/Phone.png', '+20 106 662 0129'),
+//                       _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Phone.png', '+20 106 662 0129'),
 //                       const SizedBox(height: 12),
-//                       _buildInfoRow('icons/sms (1).png', 'support@ashtar.app'),
+//                       _buildInfoRow('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/sms (1).png', 'support@ashtar.app'),
 //                       const SizedBox(height: 12),
 //                       Row(
 //                         mainAxisAlignment: MainAxisAlignment.start,
 //                         children: [
-//                           _icon('icons/Frame (14).png'),
+//                           _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (14).png'),
 //                           const SizedBox(width: 12),
-//                           _icon('icons/Frame (13).png'),
+//                           _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (13).png'),
 //                           const SizedBox(width: 12),
-//                           _icon('icons/Frame (12).png'),
+//                           _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (12).png'),
 //                           const SizedBox(width: 12),
-//                           _icon('icons/Frame (11).png'),
+//                           _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (11).png'),
 //                         ],
 //                       ),
 //                       const SizedBox(height: 16),
@@ -809,9 +809,9 @@
 //                       const SizedBox(height: 12),
 //                       Row(
 //                 mainAxisAlignment: MainAxisAlignment.start,        children: [
-//                           _storeButton('icons/Frame (16).png', 'Google play'),
+//                           _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (16).png', 'Google play'),
 //                           const SizedBox(width: 12),
-//                           _storeButton('icons/Frame (15).png', 'App Store'),
+//                           _storeButton('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame (15).png', 'App Store'),
 //                         ],
 //                       )
 //                     ],
@@ -841,8 +841,8 @@
 //                       const SizedBox(height: 24),
 //                       Align(
 //                         alignment: Alignment.centerRight,
-//                         child: Image.asset(
-//                           'assets/Group 87935.png',
+//                         child: Image.network(
+//                           'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group 87935.png',
 //                           width: 80,
 //                           height: 65.7,
 //                         ),
@@ -929,13 +929,13 @@
 //         ],
 //       ),
 //       const SizedBox(width: 8),
-//       Image.asset(iconPath, width: 24, height: 24),
+//       Image.network(iconPath, width: 24, height: 24),
 //     ],
 //   );
 // }
 
 // Widget _icon(String path) {
-//   return Image.asset(path, width: 24, height: 24);
+//   return Image.network(path, width: 24, height: 24);
 // }
 //  Widget menuButton(BuildContext context, String label, Color bgColor, Color textColor) {
 //     return SizedBox(
@@ -995,7 +995,7 @@
 //     ),
 //     child: Row(
 //       children: [
-//         Image.asset(iconPath, width: 40, height: 40),
+//         Image.network(iconPath, width: 40, height: 40),
 //         const SizedBox(width: 8),
 //         Column(
 //           crossAxisAlignment: CrossAxisAlignment.start,
@@ -1087,7 +1087,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                   ),
                   Row(
                     children: [
-                      Image.asset('assets/Group87935.png', width: 55),
+                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
                 ],
@@ -1111,9 +1111,9 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                               radius: 24,
                             ),
                           ),
-                          Image.asset('icons/Vector_3.png',
+                          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_3.png',
                               width: 40, height: 41),
-                          Image.asset('icons/Vector_2.png',
+                          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_2.png',
                               width: 39.02, height: 40)
                         ],
                       ),
@@ -1128,7 +1128,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                             _navText('ذاكر'),
                             _navText('الرئيسية', highlight: true),
                             const SizedBox(width: 12),
-                            Image.asset('assets/Group87935.png', width: 55),
+                            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                           ],
                         ),
                     ],
@@ -1298,8 +1298,8 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                                                                     255,
                                                                     255,
                                                                     255))),
-                                                    Image.asset(
-                                                        'assets/Frame.png',
+                                                    Image.network(
+                                                        'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame.png',
                                                         height: 30,
                                                         width: 30)
                                                   ],
@@ -1339,8 +1339,8 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                                                             fontWeight:
                                                                 FontWeight
                                                                     .w500)),
-                                                    Image.asset(
-                                                        'assets/Group_1.png',
+                                                    Image.network(
+                                                        'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group_1.png',
                                                         width: 30,
                                                         height: 30)
                                                   ],
@@ -1626,7 +1626,7 @@ class _HomeafterloginState extends State<SchudleForTheExam> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           children: [
-                                            Image.asset('assets/arrowleft.png',
+                                            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/arrowleft.png',
                                                 width: 9.53, height: 20),
                                             const SizedBox(width: 12),
                                             const Text(

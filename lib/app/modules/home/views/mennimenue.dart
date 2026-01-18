@@ -46,8 +46,8 @@ class mennimenu extends StatelessWidget {
           children: [
             const SizedBox(height: 20),
             Center(
-              child: Image.asset(
-                'assets/logoashtarwithephase2(2).png',
+              child: Image.network(
+                'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logoashtarwithephase2(2).png',
                 width: isSmallScreen ? 100.0 : 143.51,
                 height: isSmallScreen ? 80.0 : 118.0,
                 fit: BoxFit.contain,

@@ -104,7 +104,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
               // Buttons
               Row(
                 children: [
-              Image.asset('assets/Group87935.png', width: 55),
+              Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                 ],
               ),
             ],
@@ -120,7 +120,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
 //             children: [
 //               // Logo
 //               Image.asset(
-//                 'assets/logo.png',
+//                 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo.png',
 //                 height: 40,
 //               ),
 
@@ -172,8 +172,8 @@ var g=controller.course_info.map((e)=>e.section?.length);
                           // ? NetworkImage('${controller.img2}'): NetworkImage('${controller.img}'),
                         ),
                       ),
-                    Image.asset('icons/Vector_3.png',width: 40,height: 41,),
-                    Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)
+                    Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_3.png',width: 40,height: 41,),
+                    Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector_2.png',width: 39.02,height: 40,)
                     // _buildButton('تسجيل دخول', isPrimary: true),
                     // const SizedBox(width: 12),
                     // _buildButton('انشاء حساب'),
@@ -190,7 +190,7 @@ var g=controller.course_info.map((e)=>e.section?.length);
                       _navText('ذاكر'),
                       _navText('الرئيسية', highlight: true),
                       const SizedBox(width: 12),
-                      Image.asset('assets/Group87935.png', width: 55),
+                      Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -284,7 +284,7 @@ Column(
     ,Column(
   crossAxisAlignment: CrossAxisAlignment.center
   ,mainAxisAlignment: MainAxisAlignment.center,
-  children: [Image.asset("assets/Frame_3.png",width: 249,height: 246,)],),
+  children: [Image.asset("https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_3.png",width: 249,height: 246,)],),
  Text('مفيش طلب ليك دلوقتي',style: TextStyle(
   fontSize: 36,fontWeight: FontWeight.w600,
   color: Color.fromARGB(255, 6, 69, 152)),)
@@ -331,7 +331,7 @@ Column(
 //            , color:  isSelected==true&&isSelected2==false?
 //           Color.fromARGB(255, 6, 69, 152)
 //           :  Color.fromARGB(255, 255, 255, 255)
-//             ),),Image.asset('assets/Frame.png',height: 30,width: 30,)
+//             ),),Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame.png',height: 30,width: 30,)
             
 //             ],),),
 //         onTap: (){
@@ -351,7 +351,7 @@ Column(
 // Text('امتحان في السنتر',style: TextStyle(color: isSelected==true&&isSelected2==false? Color.fromARGB(255, 235, 239, 249):Color.fromARGB(255, 6, 69, 152),
 // fontSize: 20,fontWeight: FontWeight.w500
 
-// ),),Image.asset('assets/Group (1).png',width: 30,height: 30,)
+// ),),Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group (1).png',width: 30,height: 30,)
           
 //          ],),
 //          decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)
@@ -398,7 +398,7 @@ Column(
 //   //            ClipRRect(
 //   //       borderRadius: BorderRadius.circular(12),
 //   //       child:Stack(children: [ Image.asset(
-//   //         'assets/eg-ar-phy-g10-t1-cover 1.png',
+//   //         'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/eg-ar-phy-g10-t1-cover 1.png',
 //   //         fit: BoxFit.contain,
 //   //         width: 363, // same width from Figma
 //   //         height: 157, // same height from Figma
@@ -418,7 +418,7 @@ Column(
 //   //             Text('11/11/2023' ,style: TextStyle(
 //   //               fontSize: 14,fontWeight: FontWeight.w400,
 //   //               color: Color.fromARGB(255, 6, 69, 152)),),
-//   //             Image.asset('assets/clock.png',width: 24,height: 24,)],),),
+//   //             Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/clock.png',width: 24,height: 24,)],),),
 //   //     Container(
 //   //           padding: EdgeInsets.only(top: 6,bottom: 6),
 //   //           child: Row(spacing: 8,mainAxisAlignment: MainAxisAlignment.end, 
@@ -426,7 +426,7 @@ Column(
 //   //             Text('من 5PM الي 6PM' ,style: TextStyle(
 //   //               fontSize: 14,fontWeight: FontWeight.w400,
 //   //               color: Color.fromARGB(255, 6, 69, 152)),),
-//   //             Image.asset('assets/clock.png',width: 24,height: 24,)],),)  
+//   //             Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/clock.png',width: 24,height: 24,)],),)  
               
 //   //             ,
               
@@ -467,7 +467,7 @@ Column(
 //              ClipRRect(
 //         borderRadius: BorderRadius.circular(12),
 //         child:Stack(children: [ Image.asset(
-//           'assets/eg-ar-phy-g10-t1-cover 1.png',
+//           'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/eg-ar-phy-g10-t1-cover 1.png',
 //           // fit: BoxFit.cover,
 //           width: 363, // same width from Figma
 //           height: 157, // same height from Figma
@@ -487,7 +487,7 @@ Column(
 //               Text('${DateTime.parse(controller.examsoffon[index].startdate.toString()).day}/${DateTime.parse(controller.examsoffon[index].startdate.toString()).month}/${DateTime.parse(controller.examsoffon[index].startdate.toString()).year}' ,style: TextStyle(
 //                 fontSize: 14,fontWeight: FontWeight.w400,
 //                 color: Color.fromARGB(255, 6, 69, 152)),),
-//               Image.asset('assets/clock.png',width: 24,height: 24,)],),),
+//               Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/clock.png',width: 24,height: 24,)],),),
 //       Container(
 //             padding: EdgeInsets.only(top: 6,bottom: 6),
 //             child: Row(spacing: 8,mainAxisAlignment: MainAxisAlignment.end, 
@@ -495,7 +495,7 @@ Column(
 //               Text('من 5PM الي 6PM' ,style: TextStyle(
 //                 fontSize: 14,fontWeight: FontWeight.w400,
 //                 color: Color.fromARGB(255, 6, 69, 152)),),
-//               Image.asset('assets/clock.png',width: 24,height: 24,)],),)  
+//               Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/clock.png',width: 24,height: 24,)],),)  
               
 //               ,
               
@@ -590,7 +590,7 @@ Column(
 //                                           mainAxisAlignment:
 //                                               MainAxisAlignment.center,
 //                                           children: [
-//                                             Image.asset('assets/arrowleft.png',
+//                                             Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/arrowleft.png',
 //                                                 width: 9.53, height: 20),
 //                                             const SizedBox(width: 12),
 //                                             const Text(
@@ -707,7 +707,7 @@ Column(
   //                                         mainAxisAlignment:
   //                                             MainAxisAlignment.center,
   //                                         children: [
-  //                                           Image.asset('assets/arrowleft.png',
+  //                                           Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/arrowleft.png',
   //                                               width: 9.53, height: 20),
   //                                           const SizedBox(width: 12),
   //                                           const Text(
@@ -854,7 +854,7 @@ Row(
       
       ],),
       // Row(children: [],)
-    Image.asset('assets/ملازم.png',width: 77,height: 79,)])))
+    Image.asset('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/ملازم.png',width: 77,height: 79,)])))
  
  
   ]) );
@@ -889,7 +889,7 @@ RightSidebar()
 //   children: [
 // // Container(width: 60,height: 60 ,child:  CircleAvatar(
   
-// //   backgroundImage: AssetImage('assets/p-image.jpg',),
+// //   backgroundImage: AssetImage('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/p-image.jpg',),
 //   Container(width: 513, child:Column(spacing: 8,
 //   crossAxisAlignment: CrossAxisAlignment.end,
 //   children: [
@@ -910,7 +910,7 @@ RightSidebar()
 //   height: 60,
 //   child: ClipOval(
 //     child: Image.asset(
-//       'assets/p-image.jpg',
+//       'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/p-image.jpg',
 //       fit: BoxFit.cover, // This ensures the image covers the entire circle
 //       width: 60,
 //       height: 60,
@@ -1197,13 +1197,13 @@ Widget _buildFooter(BuildContext context) {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          _icon('icons/Frame_14.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_14.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_13.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_13.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_12.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_12.png'),
                           const SizedBox(width: 12),
-                          _icon('icons/Frame_11.png'),
+                          _icon('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Frame_11.png'),
                         ],
                       ),
                       const SizedBox(height: 16),
@@ -1255,7 +1255,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.asset(
-                          'assets/Group87935.png',
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),
@@ -1484,7 +1484,7 @@ class ExamCard extends StatelessWidget {
                 bottomLeft: Radius.circular(8),
               ),
               child: Image.asset(
-                "assets/exam.png", // ضع صورة الامتحان هنا
+                "https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/exam.png", // ضع صورة الامتحان هنا
                 width: 120,
                 height: double.infinity,
                 fit: BoxFit.cover,

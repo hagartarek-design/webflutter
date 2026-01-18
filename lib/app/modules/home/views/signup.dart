@@ -45,7 +45,7 @@ class Signup extends StatelessWidget {
                   child:Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                  Image.asset('assets/ashtar.png',width: 106,height: 106,)  
+                  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/ashtar.png',width: 106,height: 106,)  
                   ,
                   SizedBox(width: 1120,//height: 740,
                    child: Column(

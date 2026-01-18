@@ -88,8 +88,8 @@ Column(children: [Text('كورس المراجعة'),
 Text('الترم التاني [الصف الثالث الثانوي]')
   ,  
 ],),
-    Image.asset(
-                  'assets/logo1.png',
+    Image.network(
+                  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo1.png',
                   height: 40,width: 40,
                 ),        ],)
             ],),),
@@ -159,7 +159,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
 
 
 ])),
-      Image.asset('assets/bocket.png')
+      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/bocket.png')
 
            ],) ,) 
 ,
@@ -198,7 +198,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Group23576.png',height: 16,width: 16,),
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group23576.png',height: 16,width: 16,),
              Radio<String>(
                                             value:fawryCard.toString(),
                                             groupValue: SelectedMethod,
@@ -208,7 +208,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
                                                 print(SelectedMethod);
                                               });}
                                           ),
-              // Image.asset('assets/Icon_21_.png',height: 16,width: 16,),
+              // Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Icon_21_.png',height: 16,width: 16,),
             ],),),
             
             Text('فوري باي',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152)
@@ -232,7 +232,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Frame_17.png',height: 16,width: 16,),
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_17.png',height: 16,width: 16,),
          Radio<String>(
                                             value:chargeCard.toString(),
                                             groupValue: SelectedMethod,
@@ -270,7 +270,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Group87970.png',height: 16,width: 79,),
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87970.png',height: 16,width: 79,),
                Radio<String>(
                                             value: "بطاقة دفع اءتمان",
                                             groupValue: SelectedMethod,
@@ -280,7 +280,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
                                               });
                                             },
                                           ),
-              // Image.asset('assets/Icon_21_.png',height: 16,width: 16,),
+              // Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Icon_21_.png',height: 16,width: 16,),
             ],),),
             
             Text('بطاقة (دفع-ائتمان)',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152)
@@ -300,7 +300,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
             Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset('assets/Frame203.png',height: 16,width: 76.89,)
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame203.png',height: 16,width: 76.89,)
           , Radio<String>(
                                             value: "دفع-ائتمان",
                                             groupValue: SelectedMethod,
@@ -309,7 +309,7 @@ Text('تقدر تدفع او تخصم من محفظتك',style: TextStyle(color:
                                                 SelectedMethod = val;
                                               });
                                             },
-                                          ),    // Image.asset('assets/Icon_21_.png',height: 16,width: 16,),
+                                          ),    // Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Icon_21_.png',height: 16,width: 16,),
             ],),),
             
             Text('بطاقة (دفع-ائتمان)',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152)

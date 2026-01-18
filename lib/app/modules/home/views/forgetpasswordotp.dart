@@ -49,7 +49,7 @@ Container(
       
       
       width: 617,height: 832,
-      child:SizedBox(width: 497,height: 388, child:  Image.asset('assets/forgotpassword1.png',) ,)
+      child:SizedBox(width: 497,height: 388, child:  Image.network('assets/forgotpassword1.png',) ,)
  )   ,             
                 //   child:
                    Container(
@@ -69,7 +69,7 @@ Container(
                           width: 457,height: 106,
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          children: [ Image.asset('assets/logo1.png',width: 106,height: 106,)],) 
+                          children: [ Image.network('assets/logo1.png',width: 106,height: 106,)],) 
                           ,)
                      ,
                      SizedBox(
@@ -294,7 +294,7 @@ Container(
                 child:Row(children: [  
                 Text('اعادة الارسال',style: TextStyle(color: Color.fromARGB(255, 6, 69, 152),fontSize: 16,fontWeight: FontWeight.w500)
                 ),
-              Image.asset('icons/Group.png',width: 20,height: 20,),],))
+              Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Group.png',width: 20,height: 20,),],))
             ,
             InkWell(child:Text('لم يصلك الكود؟',style: TextStyle(color:
                Color.fromARGB(255, 6, 69, 152),

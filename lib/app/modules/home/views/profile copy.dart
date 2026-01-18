@@ -23,7 +23,7 @@
 //             const SizedBox(height: 20),
 //             // لوجو أو أيقونة
 //             Center(
-//               child: Image.asset('assets/logo ashtar withe phase 2 (2).png',width: 143.51,height:118,)
+//               child: Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo ashtar withe phase 2 (2).png',width: 143.51,height:118,)
 //             ),
 //             const SizedBox(height: 20),
             
@@ -135,8 +135,8 @@ class RightSidebar extends StatelessWidget {
             const SizedBox(height: 20),
             // Responsive logo
             Center(
-              child: Image.asset(
-                'assets/logoashtarwithephase2(2).png',
+              child: Image.network(
+                'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logoashtarwithephase2(2).png',
                 width: isSmallScreen ? 100.0 : 143.51,
                 height: isSmallScreen ? 80.0 : 118.0,
                 fit: BoxFit.contain,

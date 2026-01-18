@@ -25,15 +25,15 @@ class MenuDialog extends StatelessWidget {
             
             Align(
                 alignment: Alignment.topLeft,
-                child: Image.asset(
-                  'icons/Vector.png',
+                child: Image.network(
+                  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Vector.png',
                   height: 40,
                 ),
               ),
             Align(
                 alignment: Alignment.topRight,
-                child: Image.asset(
-                  'assets/Group87935.png',
+                child: Image.network(
+                  'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                   height: 40,
                 ),
               ),

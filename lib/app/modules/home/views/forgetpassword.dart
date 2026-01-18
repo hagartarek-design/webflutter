@@ -46,7 +46,7 @@ color: const Color.fromARGB(255, 245, 245, 245),
 Container(child: Row(
   mainAxisAlignment: MainAxisAlignment.center,
   children: [
-   Image.asset('assets/forgotpassword1.png',width: 497,height: 388,)   ,                 // color: const Color.fromARGB(48, 244, 67, 54),
+   Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/forgotpassword1.png',width: 497,height: 388,)   ,                 // color: const Color.fromARGB(48, 244, 67, 54),
                   // )]),
                 // ),
             
@@ -72,7 +72,7 @@ Container(child: Row(
                           width: 457,height: 106,
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          children: [ Image.asset('assets/logo1.png',width: 106,height: 106,)],) 
+                          children: [ Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo1.png',width: 106,height: 106,)],) 
                           ,)
                      ,
                      SizedBox(

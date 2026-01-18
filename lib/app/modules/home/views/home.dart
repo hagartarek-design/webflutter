@@ -714,7 +714,7 @@ TextButton(
                         Container(
                           child:Row(
                           mainAxisAlignment: MainAxisAlignment.end,
-                          children: [ Image.asset('assets/logo1.png',width: 106,height: 106,)],) 
+                          children: [ Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/logo1.png',width: 106,height: 106,)],) 
                           ,width: 457,height: 106,)
                      ,
                      Container(
@@ -980,7 +980,7 @@ mainAxisAlignment: MainAxisAlignment.start,    children: [
  , child:  Row(
   spacing: 16,mainAxisAlignment: MainAxisAlignment.center,
   children: [ 
-  Image.asset('assets/facebookcircle.png',width: 24,height: 24.56,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/facebookcircle.png',width: 24,height: 24.56,),
     AutoTranslateText(text:'تسجبل دخول عبر',weight: FontWeight.w500,//fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152))
   // Text(,style: TextStyle(
@@ -1017,7 +1017,7 @@ TextButton(
  , child:Row(mainAxisAlignment: MainAxisAlignment.center,
   spacing: 16,
   children: [ 
-  Image.asset('assets/Google@2x(1).png',width: 24,height: 24.56,),
+  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Google@2x(1).png',width: 24,height: 24.56,),
   AutoTranslateText(text:'تسجبل دخول عبر',weight: FontWeight.w500,fontSize: 18,
     color:Color.fromARGB(255, 6, 69, 152))]))),
           

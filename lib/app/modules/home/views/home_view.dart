@@ -26,8 +26,8 @@ class BannerWithOverlay extends StatelessWidget {
         Container(
           width: double.infinity,
           height: 250,
-          child: Image.asset(
-            'assets/banner.png',
+          child: Image.network(
+            'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/banner.png',
             fit: BoxFit.cover,
           ),
         ),
@@ -37,7 +37,7 @@ class BannerWithOverlay extends StatelessWidget {
           right: 16,
           child: CircleAvatar(
             radius: 24,
-            backgroundImage: AssetImage('assets/profile.jpg'),
+            backgroundImage: AssetImage('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/profile.jpg'),
           ),
         ),
 
