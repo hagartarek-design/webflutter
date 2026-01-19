@@ -114,7 +114,7 @@ class HomeView extends GetView<HomeController> {
                       _navText('عن أشطر',),
                       _navText('تواصل معنا',),
                       const SizedBox(width: 12),
-                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
+                      Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
                     ],
                   ),
               ],
@@ -144,7 +144,7 @@ class HomeView extends GetView<HomeController> {
               ),
             ),
             Image.network( 
-              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/teacherscover.png',
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/teacherscover.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -157,14 +157,14 @@ class HomeView extends GetView<HomeController> {
               runSpacing: 16,
               alignment: WrapAlignment.center,
               children: [
-                _buildClassCard2('الصف الأول الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context,isMobile),
-                _buildClassCard2('الصف الثاني الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context,isMobile),
-                _buildClassCard2('الصف الثالث الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/3rdsec2.png',context,isMobile),
+                _buildClassCard2('الصف الأول الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/1stsec2x.png',context,isMobile),
+                _buildClassCard2('الصف الثاني الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/2ndsec.png',context,isMobile),
+                _buildClassCard2('الصف الثالث الثانوي', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/3rdsec2.png',context,isMobile),
               ],
             ), 
             const SizedBox(height: 20),
             Image.network(
-              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/thumb4.png',
+              'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/thumb4.png',
               width: screenWidth,
               fit: BoxFit.fitWidth,
             ),
@@ -335,7 +335,7 @@ width: !isMobile?1120:screenWidth,      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
+          Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Frame_10.png', width: 43, height: 40),
           const SizedBox(height: 8),
           const Text(
             'الأستاذ شريف البدري',
@@ -468,7 +468,7 @@ Widget _buildFooter(BuildContext context) {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Image.network(
-                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
+                          'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
                           width: 80,
                           height: 65.7,
                         ),

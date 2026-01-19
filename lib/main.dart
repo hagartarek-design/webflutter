@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';// Add this import
 import 'package:get/get.dart';
+import 'package:my_app/app/modules/home/controllers/home_controller.dart';
 
 import 'package:my_app/app/routes/app_pages.dart';
 
@@ -23,12 +24,17 @@ void main() async {
   //     appId: "1:64872570774:web:dad36ad23957204bf9c7b7",
   //   ),
   // );
+// sharedpre
+ HomeController controller=HomeController(); 
+  WidgetsFlutterBinding.ensureInitialized();
+  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
+  final initialRoute = await controller. getInitialRoute();
   runApp(
    GetMaterialApp(
   debugShowCheckedModeBanner: false,
   title: "Application",
-  initialRoute: AppPages.INITIAL,
+  initialRoute: initialRoute,
   locale: const Locale('ar'),
   getPages: AppPages.routes,
 )

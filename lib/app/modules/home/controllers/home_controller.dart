@@ -1,6 +1,8 @@
 import 'dart:convert';
-import 'dart:io';
-
+import 'dart:io';import 'package:jwt_decoder/jwt_decoder.dart';
+// import 'token_utils.dart';
+import 'package:dio/dio.dart';
+// 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,7 +76,10 @@ final ScrollController scrollController = ScrollController();
       controllervideo2!.play();
     });
 }
-
+  Future<bool> isLoggedIn() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString('token') != null ||prefs.getString('accessToken') != null;
+  }
 Map<String, dynamic>? profileData;
 
   final String baseUrl = "http://localhost:5000";
@@ -2038,7 +2043,67 @@ Future<void> sectionidlessontype(String title) async {
       controllervideo2?.play();
     }
   }
- String ?photoUrl='';  
+  String ?photoUrl=''; 
+  int? userId;
+  String ?refreshtoken;
+  String ?token; 
+
+
+// Future  post ()async{
+
+// }
+// Future 
+
+// import 'package:shared_preferences/shared_preferences.dart';
+
+
+Future<String> getInitialRoute() async {
+  final tokens = await getTokens();
+  if (tokens == null) return '/main';
+
+  final accessToken = tokens['token'];
+  final refreshToken = tokens['refreshToken'];
+
+  if (JwtDecoder.isExpired(accessToken)) {
+    try {
+      final res = await Dio().post(
+        'http://localhost:5000/auth/refresh',
+        data: {'refreshToken': refreshToken},
+      );
+      await saveTokens(res.data['token'], refreshToken, tokens['userId']);
+      return '/homeAfterLogin';
+    } catch (_) {
+      return '/main';
+    }
+  } else {
+    return '/homeAfterLogin';
+  }
+}
+
+Future<void> saveTokens(String accessToken, String refreshToken, int userId) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setString('token', accessToken);
+  await prefs.setString('refreshToken', refreshToken);
+  await prefs.setInt('userId', userId);
+}
+
+
+Future<Map<String, dynamic>?> getTokens() async {
+  final prefs = await SharedPreferences.getInstance();
+  final accessToken = prefs.getString('token');
+  final refreshToken = prefs.getString('refreshToken');
+  final userId = prefs.getInt('userId');
+  if (accessToken != null && refreshToken != null && userId != null) {
+    return {
+      'token': accessToken,
+      'refreshToken': refreshToken,
+      'userId': userId,
+    };
+  }
+  return null;
+}
+
+
    final FirebaseAuth auth = FirebaseAuth.instance;
   Future<bool> signInWithGoogle(context) async {
   try {
@@ -2062,7 +2127,9 @@ Future<void> sectionidlessontype(String title) async {
     
       final data = jsonDecode(response.body);
       final prefs = await SharedPreferences.getInstance();
-      
+    refreshtoken=data['refreshtoken'];  
+    token=data['token'];  
+    userId=data['userId'];  
       await prefs.setString('token', data['token']);
       return true;
     
