@@ -1730,9 +1730,11 @@ return
               ),
               onPressed: () {
                 controller.fetchUserQuestionExam2(id: controller.examsoffon[index].id);
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return Trueanswerexam();
-              },));},
+             Get.to(Trueanswerexam());
+              //   Navigator.push(context, MaterialPageRoute(builder: (context) {
+              //   return Trueanswerexam();
+              // },));
+              },
               child: Text(
                 textAlign: TextAlign.center,
                 'شوف امتحانك',

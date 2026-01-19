@@ -197,7 +197,11 @@ var g=controller.course_info.map((e)=>e.section?.length);
                         ),
                       ),
                 InkWell(child:Image.asset('icons/Vector_3.png',width: 40,height: 41,) ,
-                onTap: (){Navigator .push(context, MaterialPageRoute(builder: (context)=>Addedto()));},
+                onTap: (){
+                  
+                  Get.to(Addedto());
+                  // Navigator .push(context, MaterialPageRoute(builder: (context)=>Addedto()));
+                  },
                 )
                     ,
                     Image.asset('icons/Vector_2.png',width: 39.02,height: 40,)

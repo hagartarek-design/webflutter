@@ -1,4 +1,5 @@
  import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'profile.dart';
 import 'subjecttype.dart';
@@ -103,8 +104,8 @@ appBar:isMobile?
                         width: 40,
                         height: 40,
                         child:InkWell(
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){return Profile();}));
+                          onTap: (){Get.to( Profile());
+                            // Navigator.push(context, MaterialPageRoute(builder: (context){return Profile();}));
                           },
                           child:  CircleAvatar(
                           

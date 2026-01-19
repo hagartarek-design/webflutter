@@ -451,8 +451,8 @@ class Forgetpasswordforashtar extends StatelessWidget {
                                                       mainAxisAlignment: MainAxisAlignment.end,
                                                       children: [
                                                       InkWell(
-                                                        onTap: (){
-                                                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpassword()));
+                                                        onTap: (){Get.to(Forgetpassword());
+                                                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpassword()));
                                                         },
                                                         child:  Text(
                                                           'تسجيل دخول',

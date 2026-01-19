@@ -32,12 +32,12 @@ final _maxLengthNotifier = ValueNotifier<int?>(null);
    context );
 
     if (success) {
-      
+      Get.to(Mainpage());
       // Fluttertoast.showToast(msg: "Login Successful");
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Mainpage()),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(builder: (context) => Mainpage()),
+      // );
     } else  {
       ScaffoldMessenger.of(context).showSnackBar(
   SnackBar(
@@ -133,12 +133,12 @@ HomeController controller =HomeController();
     );
 
     if (success) {
-      
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => Homeafterlogin
-        ()),
-      );
+      Get.to(Homeafterlogin());
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(builder: (context) => Homeafterlogin
+      //   ()),
+      // );
     } else  {
       ScaffoldMessenger.of(context).showSnackBar(
   SnackBar(
@@ -607,7 +607,6 @@ TextButton(
       final userCredential = await authService.signInWithFacebook();
       if (userCredential != null) {
         print('Logged in: ${userCredential.user?.displayName}');
-        // Navigate or show success
       }
     } catch (e) {
       print('Error during Facebook login: $e');
@@ -682,10 +681,12 @@ TextButton(
                                       ' دوس هنا والحق اشترك ببلاش' ,color:Color.fromARGB(255, 80, 124, 181)
                                         ) ,InkWell(
                                       onTap: (){
-                                  Navigator.push(context,MaterialPageRoute(
-                                    builder:(context){ return Signup();   }
+                                        Get.to( Signup());
+                                  // Navigator.push( context,MaterialPageRoute(
+                                    // builder:(context){ return Signup(); 
+                                      }
 
-                                                                                                              )                                                                          );                                      }
+                                  //                                                                             )                                                                          );                                      }
                                       ,
                                       child:  AutoTranslateText(text:'ماعندكش حساب ؟'                                
                                     ,  fontSize: 16,weight: FontWeight.w400,
@@ -1028,11 +1029,12 @@ TextButton(
                                     AutoTranslateText(text:' دوس هنا والحق اشترك ببلاش' ,color:Color.fromARGB(255, 80, 124, 181)  ,)
                                     ,InkWell(
                                       onTap: (){
-                                  Navigator.push(context,MaterialPageRoute(
-                                    builder:(context){ return Signup();   }
+                                        Get.to(Signup());},
+                                  // Navigator.push(context,MaterialPageRoute(
+                                  //   builder:(context){ return Signup();   }
 
-                                                                                                              )                                                                          );                                      }
-                                      ,
+                                  //                                                                             )                                                                          );                                      }
+                                  //     ,
                                       child:  AutoTranslateText(text:'ماعندكش حساب ؟'
                                       ,weight: FontWeight.w400,
                                       color:Color.fromARGB(255, 12, 12, 12) ),)

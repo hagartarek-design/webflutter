@@ -72,10 +72,11 @@ Timer? _timer;
 void _navigateToResultPage() {
   // Navigate after a brief delay to ensure UI updates
   Future.delayed(Duration(milliseconds: 500), () {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(builder: (context) => Myexam()), // Replace with your target page
-    );
+  Get.to(Myexam());
+    // Navigator.pushReplacement(
+    //   context,
+    //   MaterialPageRoute(builder: (context) => ), // Replace with your target page
+    // );
   });
 }
   String _formatTime(int seconds) {
@@ -872,7 +873,8 @@ Column(
   children: [Container(
   width: 274,height: 59//,padding: EdgeInsets.fromLTRB(127, 18, 127, 18),
  , child: TextButton(onPressed: (){
-Navigator.push(context, MaterialPageRoute(builder: (context){return Myexam();}));
+  Get.to( Myexam());
+// Navigator.push(context, MaterialPageRoute(builder: (context){return;}));
 
  },style: TextButton.
 styleFrom(backgroundColor: Color.fromARGB(255, 6, 69, 152)

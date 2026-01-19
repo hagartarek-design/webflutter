@@ -298,7 +298,10 @@ Container(
             ,
             InkWell(child:Text('لم يصلك الكود؟',style: TextStyle(color:
                Color.fromARGB(255, 6, 69, 152),
-              fontSize: 16,fontWeight:FontWeight.w500 ), ) ,onTap: () =>Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpasswordotp2())))  
+              fontSize: 16,fontWeight:FontWeight.w500 ), ) ,onTap: () =>
+              Get.to(Forgetpasswordotp2())
+              // Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpasswordotp2()))
+              )  
 
              ],)
              ],),

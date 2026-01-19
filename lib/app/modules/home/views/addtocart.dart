@@ -313,8 +313,8 @@ Wrap(alignment: WrapAlignment.end,spacing: 24,
     padding: EdgeInsets.fromLTRB(24, 10, 24, 10)
     ),
     onPressed: (){
-
-      Navigator.push(context, MaterialPageRoute(builder: (context){return Myquestions();}));
+Get.to(Myquestions());
+      // Navigator.push(context, MaterialPageRoute(builder: (context){return Myquestions();}));
     }, child: Text('اسال سؤالك',style: TextStyle(fontSize: 18,
     fontWeight: FontWeight.w500,
     color: Color.fromARGB(255, 255, 255, 255)),))

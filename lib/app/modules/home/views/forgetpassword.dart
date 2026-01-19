@@ -283,7 +283,8 @@ mainAxisAlignment: MainAxisAlignment.start,    children: [
 
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpasswordotp()));
+                  Get.to(Forgetpasswordotp());
+                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgetpasswordotp()));
                 },
                 child:    Text('ماعندكش حساب ؟  ',style:TextStyle(color:Color.fromARGB(255, 6, 69, 152) ,fontSize: 16,fontWeight: FontWeight.w400) ,)
                 )  ,Text('دوس هنا و الحق اشترك ببلاش' ,style:TextStyle(color:Color.fromARGB(255, 6, 69, 152) ,fontSize: 16,fontWeight: FontWeight.w400))
