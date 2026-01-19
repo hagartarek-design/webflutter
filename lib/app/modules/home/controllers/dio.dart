@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:my_app/app/modules/home/controllers/home_controller.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 
@@ -18,14 +19,16 @@ class ApiClient {
       onError: (error, handler) async {
         if (error.response?.statusCode == 401) {
           final prefs = await SharedPreferences.getInstance();
-          final refreshToken = prefs.getString('refreshToken');
-          if (refreshToken != null) {
+          final refreshtoken = prefs.getString('refreshtoken');
+          if (refreshtoken != null) {
             try {
               final res = await Dio().post(
                 'http://localhost:5000/auth/refresh',
-                data: {'refreshToken': refreshToken},
+                data: {'refreshtoken': refreshtoken},
               );
               final newAccessToken = res.data['token'];
+              HomeController controller=HomeController();
+              controller.startTokenTimer(newAccessToken);
               await prefs.setString('token', newAccessToken);
 
               final opts = error.requestOptions;

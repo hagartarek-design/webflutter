@@ -271,23 +271,30 @@ Wrap(
                     
                     
                 InkWell(child:       _buildClassCard('احجز ملازمك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use4.png',context),
-                onTap: (){  Navigator.push(context, MaterialPageRoute(builder: (context){return subjectBooks2();}));}, ), _buildClassCard('المحاضرات المباشره', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png',context),
-             InkWell( onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context){
+                onTap: (){  //Navigator.push(context, MaterialPageRoute(builder: (context){return subjectBooks2();}));
+                Get.to(subjectBooks2());
+                }, ), _buildClassCard('المحاضرات المباشره', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use5.png',context),
+             InkWell( onTap: (){
+              Get.to(Subjecttype());
+//               Navigator.push(context, MaterialPageRoute(builder: (context){
 // controller.fetchcourseinfo();
-              return Subjecttype();
-             }));}, child: _buildClassCard('شوف محاضراتك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',context),)  
+//               return Subjecttype();
+//              }));
+             }, child: _buildClassCard('شوف محاضراتك', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use7.png',context),)  
                 ],),
 Wrap(
                  spacing: 16, 
                   alignment: WrapAlignment.center,
                   children: [
            InkWell(child:      _buildClassCard('احجز امتحانك الشامل', 'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use1.png',context),
-                   onTap: () {
-                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return SchudleForTheExam();
-                     }));
-                   }, ), InkWell(child: _buildClassCard('احجز السنتر','https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use3.png',context),onTap: (){
-                   Navigator.push(context, MaterialPageRoute(builder: (context){return schedule_center();}));
+                   onTap: () {Get.to( SchudleForTheExam());
+                    //  Navigator.push(context, MaterialPageRoute(builder: (context){
+                    //   return SchudleForTheExam();
+                    //  }));
+                   }, ), InkWell(child: _buildClassCard('احجز السنتر','https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/use3.png',context),onTap:
+                    (){
+                Get.to(schedule_center());                
+                  //  Navigator.push(context, MaterialPageRoute(builder: (context){return schedule_center();}));
                   },) ,
                 
                 ],),
@@ -556,7 +563,8 @@ Widget _buildFooter(BuildContext context) {
                         spacing: 24,
                         children: [
                          InkWell(onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context){return Aboutashtar(); }));
+                          Get.to(Aboutashtar());
+                          // Navigator.push(context, MaterialPageRoute(builder: (context){return Aboutashtar(); }));
                          },child:_navItem('عن أشطر') ,) ,
                           _navItem('مصادري'),
                           _navItem('كورساتى'),

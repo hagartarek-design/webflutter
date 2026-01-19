@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';import 'package:jwt_decoder/jwt_decoder.dart';
 // import 'token_utils.dart';
@@ -669,9 +670,10 @@ else{print(response.statusCode);}
         var data =json.decode(response.body);
       if (response.statusCode == 200||response.statusCode == 201) {
         update();
-        Navigator.push(context, MaterialPageRoute(builder: (context){
-          return walletMobile();
-        }));
+     Get.to(walletMobile());
+        // Navigator.push(context, MaterialPageRoute(builder: (context){
+        //   return walletMobile();
+        // }));
         return json.decode(response.body);
      } 
       else if (response.statusCode == 401) {
@@ -1317,10 +1319,10 @@ final response=await http .patch(Uri.parse(url),body:body
 
 if(response.statusCode==204||response.statusCode==200){
 //  print(response.statusCode); 
- update();
- Navigator.push(context, MaterialPageRoute(builder: (context){
-  return Homeafterlogin();
-}));
+ update();Get.to(Homeafterlogin());
+//  Navigator.push(context, MaterialPageRoute(builder: (context){
+//   return Homeafterlogin();
+// }));
  response.body;
 //  getallcourse();
 }
@@ -2055,22 +2057,46 @@ Future<void> sectionidlessontype(String title) async {
 // Future 
 
 // import 'package:shared_preferences/shared_preferences.dart';
+Timer? _logoutTimer;
 
+  /// نشغل التايمر حسب التوكن
+  void startTokenTimer(String token) {
+    _logoutTimer?.cancel();
+
+    final expirationDate = JwtDecoder.getExpirationDate(token);
+    final remainingTime =
+        expirationDate.difference(DateTime.now());
+
+    if (remainingTime.isNegative) {
+      logout();
+    } else {
+      _logoutTimer = Timer(remainingTime, logout);
+    }
+  }
+
+  /// Logout كامل
+  Future<void> logout() async {
+    _logoutTimer?.cancel();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+    Get.offAllNamed('/main');
+  }
 
 Future<String> getInitialRoute() async {
   final tokens = await getTokens();
   if (tokens == null) return '/main';
 
   final accessToken = tokens['token'];
-  final refreshToken = tokens['refreshToken'];
+  final refreshtoken = tokens['refreshtoken'];
 
   if (JwtDecoder.isExpired(accessToken)) {
     try {
       final res = await Dio().post(
         'http://localhost:5000/auth/refresh',
-        data: {'refreshToken': refreshToken},
+        data: {'refreshtoken': refreshtoken},
       );
-      await saveTokens(res.data['token'], refreshToken, tokens['userId']);
+      
+      await saveTokens(res.data['token'], refreshtoken, tokens['userId']);
       return '/homeAfterLogin';
     } catch (_) {
       return '/main';
@@ -2080,10 +2106,10 @@ Future<String> getInitialRoute() async {
   }
 }
 
-Future<void> saveTokens(String accessToken, String refreshToken, int userId) async {
+Future<void> saveTokens(String accessToken, String refreshtoken, int userId) async {
   final prefs = await SharedPreferences.getInstance();
   await prefs.setString('token', accessToken);
-  await prefs.setString('refreshToken', refreshToken);
+  await prefs.setString('refreshtoken', refreshtoken);
   await prefs.setInt('userId', userId);
 }
 
@@ -2091,12 +2117,12 @@ Future<void> saveTokens(String accessToken, String refreshToken, int userId) asy
 Future<Map<String, dynamic>?> getTokens() async {
   final prefs = await SharedPreferences.getInstance();
   final accessToken = prefs.getString('token');
-  final refreshToken = prefs.getString('refreshToken');
+  final refreshtoken = prefs.getString('refreshtoken');
   final userId = prefs.getInt('userId');
-  if (accessToken != null && refreshToken != null && userId != null) {
+  if (accessToken != null && refreshtoken != null && userId != null) {
     return {
       'token': accessToken,
-      'refreshToken': refreshToken,
+      'refreshtoken': refreshtoken,
       'userId': userId,
     };
   }
@@ -2126,11 +2152,22 @@ Future<Map<String, dynamic>?> getTokens() async {
       print("🎉 Logged in successfully: ${responseBody['token']}");
     
       final data = jsonDecode(response.body);
-      final prefs = await SharedPreferences.getInstance();
-    refreshtoken=data['refreshtoken'];  
-    token=data['token'];  
-    userId=data['userId'];  
-      await prefs.setString('token', data['token']);
+      // final prefs = await SharedPreferences.getInstance();
+        final token = data['token'];
+    final refreshToken = data['refreshtoken'];
+    final userId = data['userId'];
+startTokenTimer(token);
+    await saveTokens(token, refreshToken, userId);
+    Get.offAllNamed('/homeAfterLogin');
+    // return true;
+    
+    // refreshtoken=data['refreshtoken'];  
+    // token=data['token'];  
+    // userId=data['userId'];
+      
+    //   await prefs.setString('token', data['token']);
+    //   await prefs.setString('refreshtoken', data['refreshtoken']);
+      // await prefs.setString('userId', data['userId']);
       return true;
     
     

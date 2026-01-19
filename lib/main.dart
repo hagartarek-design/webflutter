@@ -28,6 +28,11 @@ void main() async {
  HomeController controller=HomeController(); 
   WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+final tokens = await controller. getTokens();
+if (tokens != null) {
+  // final authController = Get.put(AuthController());
+  controller.startTokenTimer(tokens['accessToken']);
+}
 
   final initialRoute = await controller. getInitialRoute();
   runApp(

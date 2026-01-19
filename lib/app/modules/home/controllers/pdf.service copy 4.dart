@@ -56,9 +56,11 @@ initialPage: 1
 
   void _handlePress() async{
     if (!_hasNavigated) {
-      await Navigator .push(context,MaterialPageRoute(builder: (context) 
-      =>FullscreenVideoScreen())
-      );
+      await
+      Get.to(FullscreenVideoScreen());
+      //  Navigator .push(context,MaterialPageRoute(builder: (context) 
+      // =>FullscreenVideoScreen())
+      // );
       setState(() {
       _hasNavigated=true;
       });
@@ -2153,9 +2155,10 @@ InkWell(onTap: ()async{
  
 await controller.initializePlayer2('${contentList[indexcontent]?['id'].toString()}');
  print('${contentList[indexcontent]?['id'].toString()}');
-  Navigator.push(context,MaterialPageRoute(builder: (context){
-    return Videobyid(index:widget.index,lesson: widget.lesson,courseId: widget.courseId,);
-    }));
+ Get.to(Videobyid(index:widget.index,lesson: widget.lesson,courseId: widget.courseId,));
+  // Navigator.push(context,MaterialPageRoute(builder: (context){
+  //   return Videobyid(index:widget.index,lesson: widget.lesson,courseId: widget.courseId,);
+  //   }));
   // print('${contentList[indexcontent]['id']}');
   // controller.initializePlayer2(contentList[indexcontent]['id']);
   

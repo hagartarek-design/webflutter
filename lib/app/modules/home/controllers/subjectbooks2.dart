@@ -250,10 +250,10 @@ int totalSectionsLength = controller.course_info
               SizedBox(
                 width: 173,height: 44,
                 child:   TextButton(onPressed: (){
-
-                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return Schedule_el_malazem();
-                  }));
+Get.to(Schedule_el_malazem());
+                  // Navigator.push(context, MaterialPageRoute(builder: (context){
+                  //   return Schedule_el_malazem();
+                  // }));
                 },
                 style:TextButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 6, 69, 152),
@@ -472,14 +472,17 @@ return     Stack( children: [
             ),
             onPressed: ()async {
           
-
-       controller.attachment[index].isUsed==false? Navigator.push(context, MaterialPageRoute(
-        builder: (context){
-          controller.fetchCart();
+     controller.fetchCart();
     controller.      addattachtocart( id: controller.attachment[index].id!);
     print(controller.attachment[index].id!);
-        return Addedto();
-       })):Container()   ;
+         
+       controller.attachment[index].isUsed==false? 
+       Get.to(Addedto())
+      //  Navigator.push(context, MaterialPageRoute(
+      //   builder: (context){
+     
+      //  }))
+       :Container()   ;
         },
             child: Text(
               'اشترك دلؤتي',

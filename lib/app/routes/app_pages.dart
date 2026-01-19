@@ -31,7 +31,7 @@ class AppPages {
   static const INITIAL = '/main';
 
   static final routes = [
-    GetPage(name: '/homeAfterLogin', page: () => Mainpage()),
-    GetPage(name: '/main', page: () => Homeafterlogin()),
+    GetPage(name: '/main', page: () => Mainpage()),
+    GetPage(name: '/homeAfterLogin', page: () => Homeafterlogin()),
   ];
 }
