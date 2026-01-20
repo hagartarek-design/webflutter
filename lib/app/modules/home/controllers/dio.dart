@@ -4,7 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
 
 class ApiClient {
-  final Dio _dio = Dio(BaseOptions(baseUrl: 'http://localhost:5000'));
+  final Dio _dio = Dio(BaseOptions(baseUrl: 'http://localhost:4000'));
 
   ApiClient() {
     _dio.interceptors.add(
@@ -25,7 +25,7 @@ class ApiClient {
             if (refreshToken != null) {
               try {
                 final res = await Dio().post(
-                  'http://localhost:5000/auth/refresh',
+                  'http://localhost:4000/auth/refresh',
                   data: {'refreshtoken': refreshToken},
                 );
 
