@@ -32,6 +32,6 @@ class AppPages {
 
   static final routes = [
     GetPage(name: '/main', page: () => Mainpage()),
-    GetPage(name: '/homeAfterLogin', page: () => Homeafterlogin()),
+    GetPage(name: '/Homeafterlogin', page: () => Homeafterlogin()),
   ];
 }

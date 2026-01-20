@@ -670,10 +670,9 @@ else{print(response.statusCode);}
         var data =json.decode(response.body);
       if (response.statusCode == 200||response.statusCode == 201) {
         update();
-     Get.to(walletMobile());
-        // Navigator.push(context, MaterialPageRoute(builder: (context){
-        //   return walletMobile();
-        // }));
+        Navigator.push(context, MaterialPageRoute(builder: (context){
+          return walletMobile();
+        }));
         return json.decode(response.body);
      } 
       else if (response.statusCode == 401) {
@@ -1319,10 +1318,10 @@ final response=await http .patch(Uri.parse(url),body:body
 
 if(response.statusCode==204||response.statusCode==200){
 //  print(response.statusCode); 
- update();Get.to(Homeafterlogin());
-//  Navigator.push(context, MaterialPageRoute(builder: (context){
-//   return Homeafterlogin();
-// }));
+ update();
+ Navigator.push(context, MaterialPageRoute(builder: (context){
+  return Homeafterlogin();
+}));
  response.body;
 //  getallcourse();
 }
@@ -2057,30 +2056,7 @@ Future<void> sectionidlessontype(String title) async {
 // Future 
 
 // import 'package:shared_preferences/shared_preferences.dart';
-Timer? _logoutTimer;
 
-  /// نشغل التايمر حسب التوكن
-  void startTokenTimer(String token) {
-    _logoutTimer?.cancel();
-
-    final expirationDate = JwtDecoder.getExpirationDate(token);
-    final remainingTime =
-        expirationDate.difference(DateTime.now());
-
-    if (remainingTime.isNegative) {
-      logout();
-    } else {
-      _logoutTimer = Timer(remainingTime, logout);
-    }
-  }
-
-  /// Logout كامل
-  Future<void> logout() async {
-    _logoutTimer?.cancel();
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.clear();
-    Get.offAllNamed('/main');
-  }
 
 Future<String> getInitialRoute() async {
   final tokens = await getTokens();
@@ -2095,16 +2071,59 @@ Future<String> getInitialRoute() async {
         'http://localhost:5000/auth/refresh',
         data: {'refreshtoken': refreshtoken},
       );
-      
       await saveTokens(res.data['token'], refreshtoken, tokens['userId']);
-      return '/homeAfterLogin';
+      return '/Homeafterlogin';
     } catch (_) {
       return '/main';
     }
   } else {
-    return '/homeAfterLogin';
+    return '/Homeafterlogin';
   }
 }
+
+Timer?_logoutTimer;
+void startTokenTimer (String token){
+  _logoutTimer?.cancel();
+  final expirationDate=JwtDecoder.getExpirationDate(token);
+  final remainingTime=expirationDate.difference(DateTime.now());
+  if(remainingTime.isNegative){
+    logout();
+  }else{
+    _logoutTimer=Timer(remainingTime, logout);
+  }
+}
+Future<void>logout() async {
+  _logoutTimer?.cancel();
+  final prefs=await SharedPreferences.getInstance();
+  await prefs.clear();
+  Get .offAllNamed('/main');
+
+}
+// final FirebaseAuth auth=FirebaseAuth.instance;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Future<void> saveTokens(String accessToken, String refreshtoken, int userId) async {
   final prefs = await SharedPreferences.getInstance();
@@ -2152,14 +2171,19 @@ Future<Map<String, dynamic>?> getTokens() async {
       print("🎉 Logged in successfully: ${responseBody['token']}");
     
       final data = jsonDecode(response.body);
-      // final prefs = await SharedPreferences.getInstance();
+      final prefs = await SharedPreferences.getInstance();
         final token = data['token'];
     final refreshToken = data['refreshtoken'];
     final userId = data['userId'];
+
+   await saveTokens(token, refreshToken, userId);
+
+// final authController = Get.put(AuthController());
 startTokenTimer(token);
-    await saveTokens(token, refreshToken, userId);
-    Get.offAllNamed('/homeAfterLogin');
-    // return true;
+
+Get.offAllNamed('/Homeafterlogin');
+
+    return true;
     
     // refreshtoken=data['refreshtoken'];  
     // token=data['token'];  

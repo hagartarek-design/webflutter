@@ -72,11 +72,10 @@ Timer? _timer;
 void _navigateToResultPage() {
   // Navigate after a brief delay to ensure UI updates
   Future.delayed(Duration(milliseconds: 500), () {
-  Get.to(Myexam());
-    // Navigator.pushReplacement(
-    //   context,
-    //   MaterialPageRoute(builder: (context) => ), // Replace with your target page
-    // );
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => Myexam()), // Replace with your target page
+    );
   });
 }
   String _formatTime(int seconds) {
@@ -384,7 +383,7 @@ Widget _buildPagination(HomeController controller, int currentPage) {
                     },
                     child: const Icon(Icons.menu, color: Colors.white),
                   ),
-                  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
+                  Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Fassets/Group87935.png', width: 55),
                 ],
               ),
             )
@@ -424,7 +423,7 @@ Widget _buildPagination(HomeController controller, int currentPage) {
                             _navText('ذاكر'),
                             _navText('الرئيسية', highlight: true),
                             const SizedBox(width: 12),
-                            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png', width: 55),
+                            Image.network('https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Fassets/Group87935.png', width: 55),
                           ],
                         ),
                     ],
@@ -873,8 +872,7 @@ Column(
   children: [Container(
   width: 274,height: 59//,padding: EdgeInsets.fromLTRB(127, 18, 127, 18),
  , child: TextButton(onPressed: (){
-  Get.to( Myexam());
-// Navigator.push(context, MaterialPageRoute(builder: (context){return;}));
+Navigator.push(context, MaterialPageRoute(builder: (context){return Myexam();}));
 
  },style: TextButton.
 styleFrom(backgroundColor: Color.fromARGB(255, 6, 69, 152)
@@ -1217,7 +1215,7 @@ styleFrom(backgroundColor: Color.fromARGB(255, 6, 69, 152)
                         Align(
                           alignment: Alignment.centerRight,
                           child: Image.network(
-                            'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/assets/Group87935.png',
+                            'https://media.githubusercontent.com/media/hagartarek-design/webflutter/refs/heads/main/icons/Fassets/Group87935.png',
                             width: 80,
                             height: 65.7,
                           ),

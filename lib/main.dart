@@ -9,41 +9,33 @@ import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  
-  // await Firebase.initializeApp(
-  //   options: FirebaseOptions(
-  //     apiKey: "AIzaSyBQ6Ofa213SFlOgiMYS_uBLZ0LX317l3bU",
-  //     authDomain: "students-e7907.firebaseapp.com",
-  //     projectId: "students-e7907",
-  //     storageBucket: "students-e7907.firebasestorage.app",
-  //     messagingSenderId: "64872570774",
-  //     appId: "1:64872570774:web:dad36ad23957204bf9c7b7",
-  //   ),
-  // );
-// sharedpre
- HomeController controller=HomeController(); 
-  WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  final HomeController controller = Get.put(HomeController());
+  String initialRoute;
+
+  try {
+    initialRoute = await controller.getInitialRoute();
+  } catch (_) {
+    initialRoute = '/main';
+  }
+  // HomeController controller=HomeController();
 final tokens = await controller. getTokens();
 if (tokens != null) {
   // final authController = Get.put(AuthController());
-  controller.startTokenTimer(tokens['accessToken']);
+  controller.startTokenTimer(tokens['token']);
 }
-
-  final initialRoute = await controller. getInitialRoute();
   runApp(
-   GetMaterialApp(
-  debugShowCheckedModeBanner: false,
-  title: "Application",
-  initialRoute: initialRoute,
-  locale: const Locale('ar'),
-  getPages: AppPages.routes,
-)
-
+    GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "Application",
+      initialRoute: initialRoute,
+      locale: const Locale('ar'),
+      getPages: AppPages.routes,
+    ),
   );
 }
 

@@ -314,7 +314,7 @@ ExamresultAnswerSheet()
                   );
                 },
                 child: Container(
-                  margin: const EdgeInsets.all(13.0),
+                  margin: const EdgeInsets.all(6.0),
                   width: _currentPage == index ? 100 : 100,
                   height: _currentPage == index ? 12 : 8,
                   decoration: BoxDecoration(
